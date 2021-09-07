@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  height: 100vh; /*100% of viewport height*/
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; /*Overlapping elements with a larger z-index cover those with a smaller one*/
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-right: 12px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 7px 15px;
+  color: #fff;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+header ul li a:hover, .active {
+  background: #5be8ce;
+  color: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+section img#pipe {
+  width: 80px;
+  height: 100px;
+  left: 30%;
+  top: 81.7%;
+  z-index: 10;
+}
+
+section img#mario {
+  height: 95px;
+  width: 70px;
+  left: 30.2%;
+  top: 20px;
+  z-index: 9;
+}
+
+.txt {
+  background: linear-gradient(#cb6315, 5px, #000, 95%, #0ebdd8);
+  position: relative;
+  padding: 50px;
+}
