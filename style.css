@@ -80,7 +80,7 @@ section img#mario {
 }
 
 .txt {
-  background: linear-gradient(#cb6315, 5px, #000, 95%, #0ebdd8);
+  background: linear-gradient(#cb6315, 5%, #000, 95%, #0ebdd8);
   position: relative;
   padding: 50px;
 }
