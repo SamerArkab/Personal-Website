@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth; /*scrolling navigation*/
 }
 
 body {
@@ -63,24 +64,74 @@ section img {
   object-fit: fill;
 }
 
-section img#pipe {
+#openbg {
+  z-index: 1;
+}
+
+#mario {
+  height: 95px;
+  width: 70px;
+  left: 30.2%;
+  z-index: 2;
+}
+
+#pipe {
   width: 80px;
   height: 100px;
   left: 30%;
   top: 81.7%;
-  z-index: 10;
+  z-index: 3;
 }
 
-section img#mario {
-  height: 95px;
-  width: 70px;
-  left: 30.2%;
-  top: 20px;
-  z-index: 9;
+#about {
+  z-index: 4;
+  position: absolute;
+  left: 57%;
 }
 
 .txt {
-  background: linear-gradient(#cb6315, 5%, #000, 95%, #0ebdd8);
+  background: linear-gradient(#cb6315, 15%, #000, 85%, #0ebdd8);
   position: relative;
   padding: 50px;
+  width: 100%;
+  z-index: 5;
+}
+
+@keyframes neon-colors {
+  from {
+    background-color: #9be85b;
+  }
+  to {
+    background-color: #5be8b0;
+  }
+}
+.neon-animation {
+  z-index: 5;
+  top: 55.8%;
+  position: absolute;
+  animation-name: neon-colors;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#closebg {
+  z-index: 1;
+}
+
+#me {
+  z-index: 6;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 115px;
+  left: 100px;
+  border-radius: 220px;
+}
+
+#brick {
+  z-index: 7;
+  top: 92.2%;
+  width: 83px;
+  height: 72px;
+  left: 30.1%;
 }
