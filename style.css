@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100; /*Overlapping elements with a larger z-index cover those with a smaller one*/
+  z-index: 100; /*Overlapping elements with a larger z-index to cover those with a smaller one*/
 }
 
 header ul {
@@ -38,14 +38,14 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding: 7px 15px;
-  color: #fff;
+  color: #FFF;
   border-radius: 15px;
   font-weight: bold;
 }
 
 header ul li a:hover, .active {
-  background: #5be8ce;
-  color: #fff;
+  background: #5BE8CE;
+  color: #FFF;
 }
 
 section {
@@ -69,18 +69,26 @@ section img {
 }
 
 #mario {
-  height: 95px;
-  width: 70px;
+  height: 10vh;
+  width: 3.5vw;
   left: 30.2%;
   z-index: 2;
 }
 
 #pipe {
-  width: 80px;
-  height: 100px;
+  width: 4vw;
+  height: 11vh;
   left: 30%;
   top: 81.7%;
   z-index: 3;
+}
+
+#brick {
+  z-index: 3;
+  top: 92.2%;
+  left: 30.1%;
+  width: 4.27vw;
+  height: 7.8vh;
 }
 
 #about {
@@ -90,8 +98,8 @@ section img {
   top: 15%;
   border: 10px solid powderblue;
   padding: 20px;
-  color: #f0cc5d;
-  background-color: #61bece;
+  color: #F0CC5D;
+  background-color: #61BECE;
 }
 
 #aboutlist {
@@ -99,63 +107,70 @@ section img {
 }
 
 .txt {
-  background: linear-gradient(#cb6315, #0ebdd8);
+  background: linear-gradient(#CB6315, #0EBDD8);
   padding: 50px;
   width: 100%;
+  height: 100%;
   z-index: 2;
 }
 
 .paraheader {
-  color: green;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #C6EC66;
+  padding: 7px;
+  width: 30vh;
+  opacity: 0.7;
+  border-radius: 25%;
 }
 
 /* unvisited link */
 .paralinks:link {
- color: green;
+ color: #F1C40F;
  text-decoration: none;
 }
 
 /* visited link */
 .paralinks:visited {
- color: red;
+ color: #873600;
  text-decoration: none;
 }
 
 /* mouse over link */
 .paralinks:hover {
- color: pink;
+ color: #D7BDE2;
  text-decoration: none;
 }
 
 /* selected link */
 .paralinks:active {
- color: yellow;
+ color: #EC7063;
  text-decoration: none;
 }
 
 @keyframes neon-colors {
   0% {
-    background-color: #9be85b;
+    background-color: #82E0AA;
   }
   20% {
-    background-color: #d9e85b;
+    background-color: #F7DC6F;
   }
   40% {
-    background-color: #e8c25b;
+    background-color: #F8C471;
   }
   60% {
-    background-color: #e8aa5b;
+    background-color: #F0B27A;
   }
   80% {
-    background-color: #d9e85b;
+    background-color: #F7DC6F;
   }
   100% {
-    background-color: #9be85b;
+    background-color: #82E0AA;
   }
 }
 
 .neon-animation {
   z-index: 5;
+  opacity: 0.2;
   top: 48.5%;
   left: 66.3%;
   position: absolute;
@@ -170,48 +185,40 @@ section img {
 
 #me {
   z-index: 6;
-  width: 300px;
-  height: 400px;
+  width: 16vw;
+  height: 50vh;
   position: absolute;
-  top: 16.5%;
-  left: 65.4%;
+  top: 14%;
+  left: 65%;
   border-radius: 200px;
-}
-
-#brick {
-  z-index: 7;
-  top: 92.2%;
-  left: 30.1%;
-  width: 83px;
-  height: 72px;
 }
 
 @keyframes flaglight-colors {
   0% {
-    background-color: #e64b4b;
+    background-color: #943126;
   }
   20% {
-    background-color: #e64ba2;
+    background-color: #1A5276;
   }
   40% {
-    background-color: #5e4be6;
+    background-color: #117864;
   }
   60% {
-    background-color: #4ba0e6;
+    background-color: #21618C;
   }
   80% {
-    background-color: #e64ba2;
+    background-color: #1A5276;
   }
   100% {
-    background-color: #e64b4b;
+    background-color: #943126;
   }
 }
 
 #flaglight {
   z-index: 2;
-  height: 28px;
-  width: 28px;
-  top: 19.4%;
+  height: 2.95vh;
+  width: 1.5vw;
+  top: 19.5%;
   left: 16.55%;
   animation-name: flaglight-colors;
   animation-duration: 1s;
@@ -219,9 +226,9 @@ section img {
 }
 
 #txtheader {
-  background-color: #c6ec66;
+  background-color: #C6EC66;
   padding: 8px;
   border-radius: 10px 100px / 120px;
-  width: 10.5%;
-  color: rgba(0, 0, 0, 0.5); /*transparent text*/
+  width: 7.6vw;
+  color: rgba(0, 0, 0, 0.5);
 }
