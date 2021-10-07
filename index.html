@@ -1,61 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Samr Arkab Resume Website">
     <title>Samr Arkab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
-<!--
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
--->
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="#" class="active">Introduction</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact information</a></li>
-      </ul>
+      <div id="introduction"></div>
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link link-light active" href="#introduction">Introduction</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#contactinfo">Contact Information</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <section>
-        <img src="openingbgNoPipe.png" id="openbg">
-        <img src="pipe.png" id="pipe">
-        <img src="mario.png" id="mario">
-        <img src="brick.png" id="brick">
-        <img src="me.png" id="me">
+        <img src="openingbgNoPipe.png" id="openbg" class="img-fluid">
+        <img src="pipe.png" id="pipe" class="img-fluid">
+        <img src="mario.png" id="mario" class="img-fluid">
+        <img src="brick.png" id="brick" class="img-fluid">
+        <img src="me.png" id="me" class="img-fluid">
+
 <!--
         <div class="neon-animation" style="width: 301px; height: 12px;"></div>
--->
         <div class="neon-animation" style="top: 17%; width: 300px; height: 12px;"></div>
         <div class="neon-animation" style="top: 17%; left: 66.3%; width: 12px; height: 300px;"></div>
         <div class="neon-animation" style="top: 17%; left: 81.5%; width: 12px; height: 300px;"></div>
-
+-->
         <div id="about">
           <h2><b><i>Hi, I'm Samr!</i></b><br/><hr/>
             <ul id="aboutlist">
               <li style="font-size: 85%;">BSc Software Engineering student</li>
               <br/>
               <li style="color: #f7db85; font-size: 77%;">
-                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                 <br/>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br/>
-                where I'm ready for my next adventure, and start my career!
               </li>
-              <li style="color: #c6ec66; font-size: 40%;">ADD QUICK BOTTOM\TOP\MIDDLE INTERACTIVE</li>
             </ul>
           </h2>
         </div>
       </section>
-      <section class="txt">
+
+      <div id="projects"></div>
+      <br/><br/><br/><br/><br/>
+      <section class="txt text-justify">
         <div>
-          <h1 id="txtheader">PROJECTS</h1><br/><br/>
+          <h1 id="txtheader" class="text-justify">PROJECTS</h1><br/><br/>
         </div>
         <div>
-          <p class="para">
-            <h2 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
+          <p class="para text-justify">
+            <h2 class="paraheader text-justify">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
             <br/>
             <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 5% 5% 0% 0%; padding: 5px;">
               CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
@@ -74,96 +91,18 @@
           </p>
         </div>
         <br/><br/>
-        <div>
-          <p class="para">
-            <h2 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
-            <br/>
-            <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 5% 5% 0% 0%; padding: 5px;">
-              CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
-              Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-              <br/>Teacher can create new questions, build exams, change grades, etc.
-              <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
-              <br/><br/>
-              <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 0% 0% 5% 5%; padding: 5px;"> During the project I got familiar with:
-                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                <li>Client\Server (TCP/IP)</li>
-                <li>Proper code documentation</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
-          </p>
-        </div>
-        <br/><br/>
-        <div>
-          <p class="para">
-            <h2 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
-            <br/>
-            <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 5% 5% 0% 0%; padding: 5px;">
-              CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
-              Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-              <br/>Teacher can create new questions, build exams, change grades, etc.
-              <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
-              <br/><br/>
-              <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 0% 0% 5% 5%; padding: 5px;"> During the project I got familiar with:
-                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                <li>Client\Server (TCP/IP)</li>
-                <li>Proper code documentation</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
-          </p>
-        </div>
-        <br/><br/>
-        <div>
-          <p class="para">
-            <h2 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
-            <br/>
-            <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 5% 5% 0% 0%; padding: 5px;">
-              CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
-              Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-              <br/>Teacher can create new questions, build exams, change grades, etc.
-              <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
-              <br/><br/>
-              <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 0% 0% 5% 5%; padding: 5px;"> During the project I got familiar with:
-                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                <li>Client\Server (TCP/IP)</li>
-                <li>Proper code documentation</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
-          </p>
-        </div>
-        <br/><br/>
-        <div>
-          <p class="para">
-            <h2 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-">GitHub</a>)</h2>
-            <br/>
-            <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 5% 5% 0% 0%; padding: 5px;">
-              CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
-              Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-              <br/>Teacher can create new questions, build exams, change grades, etc.
-              <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
-              <br/><br/>
-              <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 0% 0% 5% 5%; padding: 5px;"> During the project I got familiar with:
-                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                <li>Client\Server (TCP/IP)</li>
-                <li>Proper code documentation</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
-          </p>
-        </div>
+
       </section>
       <section>
-        <img src="closingbg.png" id="closebg">
-        <img src="flaglight.png" id="flaglight">
+        <img src="closingbg.png" id="closebg" class="img-fluid">
+        <img src="flaglight.png" id="flaglight" class="img-fluid">
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div id="contactinfo"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
