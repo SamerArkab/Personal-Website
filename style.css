@@ -65,6 +65,8 @@ section img {
 
 #openbg {
   z-index: 1;
+  height: 100vh;
+  width: 100vw;
 }
 
 #mario {
@@ -75,19 +77,19 @@ section img {
 }
 
 #pipe {
-  width: 4vw;
+  width: 4.2vw;
   height: 11vh;
-  left: 30%;
-  top: 95.5%;
+  left: 29.9%;
+  top: 81.5%;
   z-index: 3;
 }
 
 #brick {
   z-index: 3;
-  top: 106.6%;
+  top: 92.5%;
   left: 30.1%;
-  width: 4.3vw;
-  height: 6.2vh;
+  width: 4.35vw;
+  height: 7.46vh;
 }
 
 #about {
@@ -95,8 +97,9 @@ section img {
   position: absolute;
   left: 4%;
   top: 15%;
+  width: 34%;
   border: 10px solid powderblue;
-  padding: 20px;
+  padding: 1%;
   color: #F0CC5D;
   background-color: #61BECE;
 }
@@ -180,6 +183,8 @@ section img {
 
 #closebg {
   z-index: 1;
+  height: 100vh;
+  width: 100vw;
 }
 
 #me {
@@ -187,9 +192,8 @@ section img {
   width: 16vw;
   height: 50vh;
   position: absolute;
-  top: 14%;
+  top: 10%;
   left: 65%;
-  border-radius: 200px;
 }
 
 @keyframes flaglight-colors {
@@ -215,9 +219,9 @@ section img {
 
 #flaglight {
   z-index: 2;
-  height: 2.95vh;
+  height: 3.2vh;
   width: 1.5vw;
-  top: 22.852%;
+  top: 19.5%;
   left: 16.55%;
   animation-name: flaglight-colors;
   animation-duration: 1s;

@@ -3,7 +3,7 @@ var flaglight = document.getElementById('flaglight');
 
 window.addEventListener('scroll', function() {
   var value = window.scrollY; //number of pixels that the document is currently scrolled vertically
-  mario.style.top = value * 0.129 + 'vh'; //height of viewport
+  mario.style.top = value * 0.156 + 'vh'; //height of viewport
 
   if (window.scrollMaxY == value)
     flaglight.style.visibility = "visible";
