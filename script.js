@@ -3,7 +3,7 @@ var flaglight = document.getElementById('flaglight');
 
 window.addEventListener('scroll', function() {
   var value = window.scrollY; //number of pixels that the document is currently scrolled vertically
-  mario.style.top = value * 0.156 + 'vh'; //height of viewport
+  mario.style.top = value * 0.1268 + 'vh'; //height of viewport
 
   if (window.scrollMaxY == value)
     flaglight.style.visibility = "visible";
@@ -18,3 +18,12 @@ for(let i=0; i<links.length; i++){
     this.classList.add('active'); //add active class to the clicked element
   });
 }
+
+let navLinks = document.querySelectorAll('.nav-item')
+let menuToggle = document.getElementById('navbarSupportedContent')
+let bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => {
+      bsCollapse.toggle() //"click" on navbar collapse button after nav-item click
+    })
+})

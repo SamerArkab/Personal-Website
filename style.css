@@ -119,10 +119,16 @@ section img {
 .paraheader {
   color: rgba(0, 0, 0, 0.5);
   background-color: #C6EC66;
-  padding: 7px;
-  width: 30vh;
-  opacity: 0.7;
-  border-radius: 25%;
+  padding: 0.5em;
+  display: table-cell;
+  opacity: 0.8;
+  border-radius: 25% 25% / 20%;
+  text-align: center;
+}
+
+.paratext {
+  text-align: left;
+  width: 70%;
 }
 
 /* unvisited link */
@@ -219,7 +225,7 @@ section img {
 
 #flaglight {
   z-index: 2;
-  height: 3.2vh;
+  height: 3vh;
   width: 1.5vw;
   top: 19.5%;
   left: 16.55%;
@@ -230,8 +236,9 @@ section img {
 
 #txtheader {
   background-color: #C6EC66;
-  padding: 8px;
-  border-radius: 10% 15% / 20%;
-  width: 12vw;
+  text-align: center;
+  padding: 0.5em;
+  display: table-cell;
+  border-radius: 20% 20% / 20%;
   color: rgba(0, 0, 0, 0.5);
 }

@@ -17,7 +17,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto ">
               <li class="nav-item">
                 <a class="nav-link link-light active" href="#introduction">Introduction</a>
               </li>
@@ -47,11 +47,12 @@
         <div class="neon-animation" style="top: 17%; left: 66.3%; width: 12px; height: 300px;"></div>
         <div class="neon-animation" style="top: 17%; left: 81.5%; width: 12px; height: 300px;"></div>
 -->
+
         <div id="about" class="container">
           <h2><b><i>Hi, I'm Samr!</i></b><hr/>
             <ul id="aboutlist" class="list-group">
-              <li style="color: #f7db85; font-size: 70%; background-color: #61BECE;" class="text-justify list-group-item border-0"><b>BSc Software Engineering student</b></li>
-              <li style="color: #f7db85; font-size: 60%; background-color: #61BECE;" class="text-justify list-group-item border-0">
+              <li style="color: #f7db85; font-size: 0.7em; background-color: #61BECE;" class="text-justify list-group-item border-0"><b>BSc Software Engineering student</b></li>
+              <li style="color: #f7db85; font-size: 0.6em; background-color: #61BECE;" class="text-justify list-group-item border-0">
                 xxxxx xxxxxxxx
                 <br/>xxxxx xxxxxxxx
                 <br/>xxxxx xxxxxxxx
@@ -66,30 +67,108 @@
       <div id="projects"></div>
       <section class="txt text-justify">
         <div>
-          <h1 id="txtheader" class="text-justify" style="font-size: 200%;">PROJECTS</h1><br/><br/>
+          <br/><br/>
+          <h1 id="txtheader" class="text-justify container">PROJECTS</h1><br/><br/>
         </div>
         <div>
           <p class="para text-justify">
-            <h2 class="paraheader text-justify">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
+            <h3 class="paraheader text-justify">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
             <br/>
-            <p style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 20% 20% 0% 0%; padding: 35px;">
-              CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
-              Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-              <br/>Teacher can create new questions, build exams, change grades, etc.
-              <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
-              <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.7; font-weight: bold; border-radius: 0% 0% 20% 20%; padding: 35px;">
-                During the project I got familiar with:
-                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                <li>Client\Server (TCP/IP)</li>
-                <li>Proper code documentation</li>
-                <li>Unit testing</li>
-              </ul>
-            </p>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 0% 0%; padding: 2em 2em 1em 2em;">
+                CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br/>
+                Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
+                <br/>Teacher can create new questions, build exams, change grades, etc.
+                <br/>Principal can view statistics from the system's DB, approve extra time for exam, etc.
+                <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 0% 0% 20% 20%; padding: 1em 2em 2em 2em;">
+                  During the project I got familiar with:
+                  <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
+                  <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
+                  <li>Client\Server (TCP/IP)</li>
+                  <li>Proper code documentation</li>
+                  <li>Unit testing</li>
+                </ul>
+              </p>
+            </div>
           </p>
         </div>
         <br/><br/>
-
+        <div>
+          <p class="para text-justify">
+            <h3 class="paraheader text-justify">Detect Face Emotions Using CNN (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Detect-Face-Emotions-Using-CNN">GitHub</a>)</h2>
+            <br/>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 0% 0%; padding: 2em 2em 1em 2em;">
+                Machine Learning project to get a better understanding of how CNN works.
+                <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 0% 0% 20% 20%; padding: 1em 2em 2em 2em;">
+                  During the project I got familiar with:
+                  <li>Training dataset.</li>
+                  <li>The need for adjusting the dataset and the layers used.</li>
+                  <li>The Convolutional\MaxPooling layers and how the data of the image is compiled in the finish process to form the output.</li>
+                </ul>
+              </p>
+            </div>
+          </p>
+        </div>
+        <br/><br/>
+        <div>
+          <p class="para text-justify">
+            <h3 class="paraheader text-justify">LeetCode Problems (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/LeetCode-Problems">GitHub</a>)</h2>
+            <br/>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 0% 0%; padding: 2em 2em 1em 2em;">
+                Practicing LeetCode Problems
+                <ul style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 0% 0% 20% 20%; padding: 1em 2em 2em 2em;">
+                  Solved (so far):
+                  <li>10 easy problems</li>
+                  <li>2 medium problems</li>
+                  <li>0 hard problems</li>
+                </ul>
+              </p>
+            </div>
+          </p>
+        </div>
+        <br/><br/>
+        <div>
+          <p class="para text-justify">
+            <h3 class="paraheader text-justify">MineSweeper-BoomBeach (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/MineSweeper-BoomBeach">GitHub</a>)</h2>
+            <br/>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 20% 20%; padding: 2em 2em 2em 2em;">
+                Fun project for self improvement - trying new things using Java and getting more familiar with the use of SceneBuilder\JavaFX.
+              </p>
+            </div>
+          </p>
+        </div>
+        <br/><br/>
+        <div>
+          <p class="para text-justify">
+            <h3 class="paraheader text-justify">HangMan (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/HangMan">GitHub</a>)</h2>
+            <br/>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 20% 20%; padding: 2em 2em 2em 2em;">
+                HangMan Game - Guess The Word<br/>
+                Always loved this game and for that reason I decided to get more familiar with the fundamentals of Python (Tkinter-GUI) by writing it as my first experience with the language.
+              </p>
+            </div>
+          </p>
+        </div>
+        <br/><br/>
+        <div>
+          <p class="para text-justify">
+            <h3 class="paraheader text-justify">Learning Web Development (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Learning-Web-Development">GitHub</a>)</h2>
+            <br/>
+            <div class="paratext">
+              <p style="color: #F39C12; background-color: #1C2833; opacity: 0.8; font-weight: bold; border-radius: 20% 20% 20% 20%; padding: 2em 2em 2em 2em;">
+                Basics of HTML * CSS * JavaScript
+                <br/><br/>
+                Learning from colors to shadows and animations, etc.<br/>
+                Getting familiar with page format, links, iforms, tables, variables, elements, etc.
+              </p>
+            </div>
+          </p>
+        </div>
+        <br/><br/>
       </section>
       <section>
         <img src="closingbg.png" id="closebg" class="img-fluid">
