@@ -18,20 +18,17 @@ header {
   padding-left: 30px 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   z-index: 100; /*Overlapping elements with a larger z-index to cover those with a smaller one*/
 }
 
 header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 header ul li {
   list-style: none;
-  margin-right: 12px;
-  margin-top: 20px;
+  margin-right: 5px;
+  margin-top: 8px;
   margin-left: 5px;
   border-radius: 8px;
 }
@@ -46,7 +43,6 @@ header ul li a {
 
 header ul li a:hover, .active {
   background: #5BE8CE;
-  color: #FFF;
 }
 
 section {
@@ -117,13 +113,13 @@ section img {
 }
 
 .paraheader {
-  color: rgba(0, 0, 0, 0.5);
+  color: #556B2F;
   background-color: #C6EC66;
   padding: 0.5em;
-  display: table-cell;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 25% 25% / 20%;
   text-align: center;
+  width: 70%;
 }
 
 .paratext {
@@ -133,13 +129,13 @@ section img {
 
 /* unvisited link */
 .paralinks:link {
- color: #F1C40F;
+ color: #84BC80;
  text-decoration: none;
 }
 
 /* visited link */
 .paralinks:visited {
- color: #873600;
+ color: #84F580;
  text-decoration: none;
 }
 
@@ -240,5 +236,5 @@ section img {
   padding: 0.5em;
   display: table-cell;
   border-radius: 20% 20% / 20%;
-  color: rgba(0, 0, 0, 0.5);
+  color: #2E8B57;
 }
