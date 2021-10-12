@@ -12,39 +12,39 @@
 #mario {
   height: 10vh;
   width: 3.5vw;
-  left: 30.2%;
-  top: 9%;
-  z-index: 2;
+  left: 39.8%;
+  z-index: 3;
 }
 
 #pipe {
   width: 4.2vw;
   height: 11vh;
-  left: 29.9%;
+  left: 39.5%;
   top: 81.5%;
-  z-index: 3;
+  z-index: 5;
 }
 
 #brick {
-  z-index: 3;
+  z-index: 5;
   top: 92.5%;
-  left: 30.1%;
+  left: 39.7%;
   width: 4.35vw;
   height: 7.46vh;
 }
 
-#me {
-  z-index: 6;
-  width: 16vw;
-  height: 50vh;
+#TOCHANGE {
+  z-index: 2;
+  width: 15vw;
+  height: 15vh;
   position: absolute;
-  top: 10%;
-  left: 65%;
+  top: 34%;
+  left: 66%;
 }
 
 header nav {
   background-color: #E3F2FD;
   padding-left: 30px;
+  opacity: 0.9;
 }
 
 header ul li {
@@ -89,10 +89,9 @@ section img {
 
 .txt {
   background: linear-gradient(#217079, #0EBDD8);
-  padding: 50px;
+  padding: 30px;
   width: 100%;
   height: 100%;
-  z-index: 2;
 }
 
 #txtheader {
@@ -103,6 +102,8 @@ section img {
   text-align: center;
   font-weight: bold;
   font-size: 2.5em;
+  z-index: 5;
+  opacity: 0.9;
 }
 
 .stretch {
@@ -120,6 +121,11 @@ section img {
   font-weight: bold;
   font-size: 2em;
   width: 60%;
+  opacity: 0.9;
+}
+
+#zindexprojects {
+  z-index: 4;
 }
 
 .paralinks {

@@ -3,11 +3,15 @@ var flaglight = document.getElementById('flaglight');
 
 window.addEventListener('scroll', function() {
   var value = window.scrollY; //number of pixels that the document is currently scrolled vertically
-  mario.style.top = value * 0.1315 + 'vh'; //height of viewport
+  mario.style.top = value * 0.1323 + 'vh'; //height of viewport
 
-  if (window.scrollMaxY == value)
+  if (window.scrollMaxY == value) {
     flaglight.style.visibility = "visible";
-  else flaglight.style.visibility = "hidden";
+    document.getElementById("mario").src = "mariowin.png";
+  } else {
+    flaglight.style.visibility = "hidden";
+    document.getElementById("mario").src = "mario.png";
+  }
 })
 
 var links = document.querySelectorAll('.nav-link');
