@@ -13,8 +13,7 @@
 
 <body>
   <header>
-    <div id="introduction"></div>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+    <nav id="navbarscroll-spy" class="navbar fixed-top navbar-expand-sm navbar-light">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,174 +33,172 @@
     </nav>
   </header>
   <main>
-    <section>
-      <img src="openingbgNoPipe.png" id="openbg" class="img-fluid">
-      <img src="pipe.png" id="pipe" class="img-fluid">
-      <img src="mario.png" id="mario" class="img-fluid">
-      <img src="brick.png" id="brick" class="img-fluid">
-      <img src="CEMS1.png" id="TOCHANGE" class="img-fluid">
+    <div>
+      <section id="introduction">
+        <img src="openingbgNoPipe.png" id="openbg" class="img-fluid">
+        <img src="pipe.png" id="pipe" class="img-fluid">
+        <img src="mario.png" id="mario" class="img-fluid">
+        <img src="brick.png" id="brick" class="img-fluid">
+        <img src="CEMS1.png" id="TOCHANGE" class="img-fluid">
 
-      <div id="about">
-        <h2><b><i>Hi, I'm Samr!</i></b>
-          <hr />
-          <ul class="list-group">
-            <li style="color: #517175; font-size: 0.7em; background-color: #61BECE;" class="list-group-item border-0"><b>BSc Software Engineering student</b></li>
-            <li style="color: #517175; font-size: 0.6em; background-color: #61BECE;" class="list-group-item border-0">
-              xxxxx xxxxxxxx
-              <br />xxxxx xxxxxxxx
-              <br />xxxxx xxxxxxxx
-              <br />xxxxx xxxxxxxx
-              <br />xxxxx xxxxxxxx
-            </li>
-          </ul>
-        </h2>
-      </div>
-    </section>
+        <div id="about">
+          <h2><b><i>Hi, I'm Samr!</i></b>
+            <hr />
+            <ul class="list-group">
+              <li style="color: #517175; font-size: 0.7em; background-color: #61BECE;" class="list-group-item border-0"><b>BSc Software Engineering student</b></li>
+              <li style="color: #517175; font-size: 0.6em; background-color: #61BECE;" class="list-group-item border-0">
+                xxxxx xxxxxxxx
+                <br />xxxxx xxxxxxxx
+                <br />xxxxx xxxxxxxx
+                <br />xxxxx xxxxxxxx
+                <br />xxxxx xxxxxxxx
+              </li>
+            </ul>
+          </h2>
+        </div>
+      </section>
 
-    <div id="projects"></div>
-    <section class="txt">
-      <div class="container-fluid">
-        <br /><br />
-        <div class="row">
-          <h1 id="txtheader" class="stretch">
-            <span>P</span>
-            <span>R</span>
-            <span>O</span>
-            <span>J</span>
-            <span>E</span>
-            <span>C</span>
-            <span>T</span>
-            <span>S</span>
-          </h1>
+      <section class="txt" id="projects">
+        <div class="container-fluid">
+          <br /><br />
+          <div class="row">
+            <h1 id="txtheader" class="stretch">
+              <span>P</span>
+              <span>R</span>
+              <span>O</span>
+              <span>J</span>
+              <span>E</span>
+              <span>C</span>
+              <span>T</span>
+              <span>S</span>
+            </h1>
+            <br /><br />
+          </div>
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br />
+                    Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and
+                    more.
+                    <br />Teachers can create new questions and exams, edit existing questions and exams, approve or change grade of students exams, etc.
+                    <br />Principal can view statistics from the system's DB, whether it is for a specific course or teacher, approve extra time for exam, etc.
+                  <ul class="alignli">
+                    During the project I got familiar with:
+                    <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
+                    <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
+                    <li>Multithreading - used for functions related to timer.</li>
+                    <li>Client\Server (TCP/IP)</li>
+                    <li>Proper code documentation</li>
+                    <li>Unit testing</li>
+                  </ul>
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">Detect Face Emotions Using CNN (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Detect-Face-Emotions-Using-CNN">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    Machine Learning project to get a better understanding of how CNN works.
+                  <ul class="alignli">
+                    During the project I got familiar with:
+                    <li>Training dataset.</li>
+                    <li>The need for adjusting the dataset and the layers used.</li>
+                    <li>The Convolutional \ MaxPooling layers and how the data of the image is compiled in the finish process to form the output.</li>
+                  </ul>
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">LeetCode Problems (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/LeetCode-Problems">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    Practicing LeetCode Problems
+                  <ul class="alignli">
+                    Solved (so far):
+                    <li>10 easy problems</li>
+                    <li>2 medium problems</li>
+                    <li>0 hard problems</li>
+                  </ul>
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">Mine Sweeper - BoomBeach (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/MineSweeper-BoomBeach">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    Fun project for self improvement - trying new things using Java and getting more familiar with the use of SceneBuilder \ JavaFX.
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">HangMan (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/HangMan">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    HangMan Game - Guess The Word<br />
+                    Always loved this game and for that reason I decided to get more familiar with the fundamentals of Python (Tkinter-GUI) by writing it as my first experience with the language.
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
+          <br /><br />
+          <div class="row">
+            <div id="zindexprojects" class="col-sm">
+              <p>
+              <h3 class="paraheader">Learning Web Development (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Learning-Web-Development">GitHub</a>)</h2>
+                <br />
+                <div class="paratext">
+                  <p>
+                    Basics of HTML * CSS * JavaScript
+                    <br /><br />
+                    Learning from colors to shadows, animations, and more.<br />
+                    Getting familiar with page format, links, iforms, tables, variables, elements, etc.
+                  </p>
+                </div>
+                </p>
+            </div>
+          </div>
           <br /><br />
         </div>
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/CEMS-Client-Server">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br />
-                  Students can perform "online" exams, which are done using the system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and
-                  more.
-                  <br />Teacher can create new questions, build exams, change grades, etc.
-                  <br />Principal can view statistics from the system's DB, approve extra time for exam, etc.
-                <ul>
-                  During the project I got familiar with:
-                  <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                  <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                  <li>Multithreading - used for functions related to timer.</li>
-                  <li>Client\Server (TCP/IP)</li>
-                  <li>Proper code documentation</li>
-                  <li>Unit testing</li>
-                </ul>
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">Detect Face Emotions Using CNN (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Detect-Face-Emotions-Using-CNN">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  Machine Learning project to get a better understanding of how CNN works.
-                <ul>
-                  During the project I got familiar with:
-                  <li>Training dataset.</li>
-                  <li>The need for adjusting the dataset and the layers used.</li>
-                  <li>The Convolutional \ MaxPooling layers and how the data of the image is compiled in the finish process to form the output.</li>
-                </ul>
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">LeetCode Problems (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/LeetCode-Problems">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  Practicing LeetCode Problems
-                <ul>
-                  Solved (so far):
-                  <li>10 easy problems</li>
-                  <li>2 medium problems</li>
-                  <li>0 hard problems</li>
-                </ul>
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">Mine Sweeper - BoomBeach (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/MineSweeper-BoomBeach">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  Fun project for self improvement - trying new things using Java and getting more familiar with the use of SceneBuilder \ JavaFX.
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">HangMan (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/HangMan">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  HangMan Game - Guess The Word<br />
-                  Always loved this game and for that reason I decided to get more familiar with the fundamentals of Python (Tkinter-GUI) by writing it as my first experience with the language.
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-        <div class="row">
-          <div id="zindexprojects" class="col-sm">
-            <p>
-            <h3 class="paraheader">Learning Web Development (<a class="paralinks" target="_blank" href="https://github.com/SamrArkab/Learning-Web-Development">GitHub</a>)</h2>
-              <br />
-              <div class="paratext">
-                <p>
-                  Basics of HTML * CSS * JavaScript
-                  <br /><br />
-                  Learning from colors to shadows, animations, and more.<br />
-                  Getting familiar with page format, links, iforms, tables, variables, elements, etc.
-                </p>
-              </div>
-              </p>
-          </div>
-        </div>
-        <br /><br />
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <img src="closingbg.png" id="closebg" class="img-fluid">
-      <img src="flaglight.png" id="flaglight" class="img-fluid">
-    </section>
-
+      <section id="contactinfo">
+        <img src="closingbg.png" id="closebg" class="img-fluid">
+        <img src="flaglight.png" id="flaglight" class="img-fluid">
+      </section>
+    </div>
   </main>
 </body>
 
-<footer>
-  <div id="contactinfo"></div>
-</footer>
+<footer></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

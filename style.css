@@ -128,6 +128,11 @@ section img {
   z-index: 4;
 }
 
+.alignli {
+  text-align: justify;
+  margin: 0 auto;
+}
+
 .paralinks {
   text-decoration: underline overline dotted;
 }
