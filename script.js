@@ -23,7 +23,11 @@ window.addEventListener('scroll', function() {
     document.getElementById('navbarscroll-spy').style.opacity = "0.7";
   }
 
-  if (window.scrollMaxY == value) {
+  /*
+  (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+  is more compatible with other browsers than scrollMaxY which is compatible only with FF
+  */
+  if ((document.documentElement.scrollHeight - document.documentElement.clientHeight) == value) {
     flaglight.style.visibility = "visible";
     document.getElementById("mario").src = "mariowin.png";
   } else {
