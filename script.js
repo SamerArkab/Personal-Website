@@ -1,6 +1,6 @@
 var mario = document.getElementById('mario');
 var flaglight = document.getElementById('flaglight');
-var links = document.querySelectorAll('.nav-link');
+var links = document.querySelectorAll('.nav-link'); //return list of said element
 
 var menuToggle = document.getElementById('navbarSupportedContent')
 var bsCollapse = new bootstrap.Collapse(menuToggle)
@@ -9,9 +9,16 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, { //call the scrollspy
   target: '#navbarscroll-spy'
 })
 
+var navfirstscroll = true;
+
 window.addEventListener('scroll', function() {
   var value = window.scrollY; //number of pixels that the document is currently scrolled vertically
   mario.style.top = value * 0.1323 + 'vh'; //height of viewport
+
+  if (navfirstscroll) {
+    bsCollapse.toggle();
+    navfirstscroll = false;
+  }
 
   if (window.scrollY == 0) { // top position - expand navbar
     document.getElementById('navbarscroll-spy').classList.remove('navbar-expand-xs');
@@ -24,8 +31,10 @@ window.addEventListener('scroll', function() {
   }
 
   /*
+  *****
   (document.documentElement.scrollHeight - document.documentElement.clientHeight)
   is more compatible with other browsers than scrollMaxY which is compatible only with FF
+  *****
   */
   if ((document.documentElement.scrollHeight - document.documentElement.clientHeight) == value) {
     flaglight.style.visibility = "visible";
@@ -34,7 +43,7 @@ window.addEventListener('scroll', function() {
     flaglight.style.visibility = "hidden";
     document.getElementById("mario").src = "mario.png";
   }
-})
+});
 
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() { //add event listener to each nav-link element
