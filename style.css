@@ -32,14 +32,21 @@
   height: 7.46vh;
 }
 
+#questionm {
+  z-index: 2;
+  width: 4.73vw;
+  height: 9vh;
+  top: 49.7%;
+  left: 71.1%;
+}
+
 #mushroomball {
   z-index: 2;
   width: 10vw;
-  height: 15vh;
+  height: 14.8vh;
   top: 35.5%;
   left: 66%;
   border-radius: 3%;
-  opacity: 0.9;
   transform: rotate(10deg);
 }
 
@@ -178,7 +185,12 @@ section img {
   z-index: 5;
   border: 5px solid #1C2833;
   border-radius: 12% 7% 10% 7%;
-  opacity: 0.9;
+}
+
+.prjimg:hover {
+  animation-name: hover-bigger-image;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
 #CEMS1 {
@@ -215,6 +227,41 @@ section img {
 
 #HM2 {
   top: 90%;
+}
+
+@keyframes hover-bigger-image {
+  0% {
+    width: 20vw;
+    height: 25vh;
+  }
+
+  25% {
+    width: 30vw;
+    height: 35vh;
+    left: 67%;
+    z-index: 6;
+  }
+
+  50% {
+    width: 40vw;
+    height: 45vh;
+    left: 57%;
+    z-index: 6;
+  }
+
+  75% {
+    width: 50vw;
+    height: 55vh;
+    left: 47%;
+    z-index: 6;
+  }
+
+  100% {
+    width: 60vw;
+    height: 65vh;
+    left: 37%;
+    z-index: 6;
+  }
 }
 
 #closebg {

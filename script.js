@@ -45,6 +45,11 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.getElementById('questionm').addEventListener('click', function(e) {
+  var newtemp = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
+  newtemp.play();
+});
+
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() { //add event listener to each nav-link element
     bsCollapse.toggle(); //collapse the navbar after click
