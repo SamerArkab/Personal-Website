@@ -32,13 +32,12 @@
   height: 7.46vh;
 }
 
-#myself {
+#mushroomball {
   z-index: 2;
-  width: 15.5vw;
-  height: 35vh;
-  position: absolute;
-  top: 11%;
-  left: 66.5%;
+  width: 10vw;
+  height: 15vh;
+  top: 35.5%;
+  left: 66%;
   border-radius: 3%;
   opacity: 0.9;
   transform: rotate(10deg);
