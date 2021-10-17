@@ -38,10 +38,10 @@ window.addEventListener('scroll', function() {
   */
   if ((document.documentElement.scrollHeight - document.documentElement.clientHeight) == value) {
     flaglight.style.visibility = "visible";
-    document.getElementById("mario").src = "mariowin.png";
+    document.getElementById("mario").src = "images/mariowin.png";
   } else {
     flaglight.style.visibility = "hidden";
-    document.getElementById("mario").src = "mario.png";
+    document.getElementById("mario").src = "images/mario.png";
   }
 });
 

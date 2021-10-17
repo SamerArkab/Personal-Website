@@ -32,13 +32,16 @@
   height: 7.46vh;
 }
 
-#TOCHANGE {
+#myself {
   z-index: 2;
-  width: 15vw;
-  height: 15vh;
+  width: 15.5vw;
+  height: 35vh;
   position: absolute;
-  top: 34%;
-  left: 66%;
+  top: 11%;
+  left: 66.5%;
+  border-radius: 3%;
+  opacity: 0.9;
+  transform: rotate(10deg);
 }
 
 header nav {
@@ -120,7 +123,7 @@ section img {
   text-align: center;
   font-weight: bold;
   font-size: 2em;
-  width: 60%;
+  width: 75%;
   opacity: 0.9;
 }
 
@@ -166,7 +169,53 @@ section img {
   font-weight: bold;
   font-size: 1em;
   opacity: 0.85;
-  width: 60%;
+  width: 75%;
+}
+
+.prjimg {
+  width: 20vw;
+  height: 25vh;
+  left: 77%;
+  z-index: 5;
+  border: 5px solid #1C2833;
+  border-radius: 12% 7% 10% 7%;
+  opacity: 0.9;
+}
+
+#CEMS1 {
+  top: 10%;
+}
+
+#CEMS2 {
+  top: 20%;
+}
+
+#CEMS3 {
+  top: 30%;
+}
+
+#CEMS4 {
+  top: 40%;
+}
+
+#CNN1 {
+  top: 50%;
+}
+
+#MS1 {
+  top: 60%;
+}
+
+#MS2 {
+  top: 70%;
+}
+
+#HM1 {
+  top: 80%;
+}
+
+#HM2 {
+  top: 90%;
 }
 
 #closebg {
