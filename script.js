@@ -1,6 +1,7 @@
 var mario = document.getElementById('mario');
 var flaglight = document.getElementById('flaglight');
 var links = document.querySelectorAll('.nav-link'); //return list of said element
+var questionm = document.getElementById('questionm')
 
 var menuToggle = document.getElementById('navbarSupportedContent')
 var bsCollapse = new bootstrap.Collapse(menuToggle)
@@ -45,9 +46,17 @@ window.addEventListener('scroll', function() {
   }
 });
 
-document.getElementById('questionm').addEventListener('click', function(e) {
+questionm.addEventListener('click', function() {
   var newtemp = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
   newtemp.play();
+});
+
+questionm.addEventListener('mouseover', function() {
+  questionm.src = "images/questionm-hover.png";
+});
+
+questionm.addEventListener('mouseleave', function() {
+  questionm.src = "images/questionm.png";
 });
 
 for (var i = 0; i < links.length; i++) {
