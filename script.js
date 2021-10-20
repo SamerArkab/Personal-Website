@@ -10,8 +10,10 @@ var mario = document.getElementById('mario'),
 var flaglight = document.getElementById('flaglight');
 var topbtn = document.getElementById('topbutton');
 var navspy = document.getElementById('navbarscroll-spy');
+var spinframe = document.getElementById('contactinfobox');
 
 var navfirstscroll = true;
+var onetimespin = true;
 
 window.addEventListener('load', setEdge);
 window.addEventListener('resize', setEdge);
@@ -32,6 +34,11 @@ window.addEventListener('scroll', function() {
   var ratio = (window.pageYOffset || window.scrollY) / overflow;
   //--epoch represents the ratio between all of scrollY and overflow
   mario.style.setProperty('--epoch', ratio);
+
+  if (ratio > 0.8 && onetimespin) {
+    spinframe.style.animationName = 'spin';
+    onetimespin = false;
+  }
 
   if (navfirstscroll) { //click navbar to collapse on first scroll
     bsCollapse.toggle();

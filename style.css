@@ -347,18 +347,41 @@ section img {
   width: 100%;
 }
 
-.contactinfo {
+#contactinfobox {
   padding: 0.5% 1% 0.5% 1%;
   top: 20%;
   left: 65%;
   max-width: 50%;
   background-color: #1C2833;
   color: white;
-  border: 6px solid #70C8D1;
+  border: 6px solid #FFF;
   border-radius: 7% 5% 7% 5%;
   position: absolute;
   z-index: 3;
-  transform: rotate(-5deg);
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(.1, .1) rotate(0deg);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(355deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: scale(.1, .1) rotate(0deg);
+  }
+
+  to {
+    transform: scale(1, 1) rotate(355deg);
+  }
 }
 
 .contactinfo p {
