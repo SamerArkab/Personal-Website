@@ -13,7 +13,38 @@
   height: 10vh;
   width: 3.5vw;
   left: 39.8%;
+  top: -5%;
   z-index: 3;
+  position: fixed;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-name: move;
+  animation-delay: calc(var(--epoch) * -1s);
+}
+
+@-webkit-keyframes move {
+
+  /*for chrome support */
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(var(--maximum));
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(var(--maximum));
+  }
 }
 
 #pipe {
@@ -72,6 +103,15 @@ header ul li a {
 
 header ul li a:hover, .active {
   background: #63dae4;
+}
+
+#topbutton {
+  position: fixed;
+  z-index: -1;
+  cursor: pointer;
+  bottom: 5%;
+  left: 3%;
+  height: 2.5vw;
 }
 
 section {
@@ -186,6 +226,7 @@ section img {
   z-index: 5;
   border: 5px solid #1C2833;
   border-radius: 12% 7% 10% 7%;
+  background-color: #1C2833;
 }
 
 .prjimg:hover {
@@ -265,6 +306,41 @@ section img {
   }
 }
 
+@-webkit-keyframes hover-bigger-image {
+  0% {
+    width: 20vw;
+    height: 25vh;
+  }
+
+  25% {
+    width: 30vw;
+    height: 35vh;
+    left: 67%;
+    z-index: 6;
+  }
+
+  50% {
+    width: 40vw;
+    height: 45vh;
+    left: 57%;
+    z-index: 6;
+  }
+
+  75% {
+    width: 50vw;
+    height: 55vh;
+    left: 47%;
+    z-index: 6;
+  }
+
+  100% {
+    width: 60vw;
+    height: 65vh;
+    left: 37%;
+    z-index: 6;
+  }
+}
+
 #closebg {
   z-index: 1;
   height: 100vh;
@@ -272,32 +348,24 @@ section img {
 }
 
 .contactinfo {
-  padding: 1.5% 1% 1.5% 1%;
+  padding: 0.5% 1% 0.5% 1%;
   top: 20%;
-  left: 55%;
-  width: 40%;
+  left: 65%;
+  max-width: 50%;
   background-color: #1C2833;
   color: white;
-  border: 10px solid #70C8D1;
-  border-radius: 10% 5% 10% 5%;
+  border: 6px solid #70C8D1;
+  border-radius: 7% 5% 7% 5%;
   position: absolute;
   z-index: 3;
+  transform: rotate(-5deg);
 }
 
 .contactinfo p {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
-.contactinfo ul {
-  list-style-type: none;
-}
-
-.contactinfo ul li {
-  padding-top: 3%;
-}
-
-.dlbtn {
-  padding: 1% 2%;
+.btn {
   background-color: #1C2833;
   color: white;
   cursor: pointer;
@@ -306,11 +374,37 @@ section img {
   border: 3px solid white;
 }
 
-.dlbtn:hover {
+.btn:hover {
   background-color: #70C8D1;
 }
 
 @keyframes flaglight-colors {
+  0% {
+    background-color: #943126;
+  }
+
+  20% {
+    background-color: #1A5276;
+  }
+
+  40% {
+    background-color: #117864;
+  }
+
+  60% {
+    background-color: #21618C;
+  }
+
+  80% {
+    background-color: #1A5276;
+  }
+
+  100% {
+    background-color: #943126;
+  }
+}
+
+@-webkit-keyframes flaglight-colors {
   0% {
     background-color: #943126;
   }
