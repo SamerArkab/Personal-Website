@@ -153,7 +153,6 @@ section img {
   font-weight: bold;
   font-size: 2.5em;
   z-index: 5;
-  opacity: 0.9;
 }
 
 .stretch {
@@ -171,7 +170,6 @@ section img {
   font-weight: bold;
   font-size: 2em;
   width: 75%;
-  opacity: 0.9;
 }
 
 #zindexprojects {
@@ -215,7 +213,6 @@ section img {
   text-align: center;
   font-weight: bold;
   font-size: 1em;
-  opacity: 0.85;
   width: 75%;
 }
 
@@ -224,7 +221,7 @@ section img {
   height: 25vh;
   left: 77%;
   z-index: 5;
-  border: 5px solid #1C2833;
+  border: 5px solid #FFF;
   border-radius: 12% 7% 10% 7%;
   background-color: #1C2833;
 }
