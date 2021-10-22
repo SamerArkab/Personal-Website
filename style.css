@@ -22,6 +22,8 @@
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-name: move;
+  /*negative delay starts the animation immediatly as if that amount has already gone by,
+    so start the animation at a state further into the animation cycle. */
   animation-delay: calc(var(--epoch) * -1s);
 }
 
