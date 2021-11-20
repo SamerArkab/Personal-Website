@@ -50,9 +50,9 @@
 }
 
 #pipe {
-  width: 4.2vw;
+  width: 4.5vw;
   height: 11vh;
-  left: 39.5%;
+  left: 39.28%;
   top: 81.5%;
   z-index: 5;
 }
@@ -104,15 +104,15 @@ header ul li a {
 }
 
 header ul li a:hover, .active {
-  background: #63dae4;
+  background: #85ADCB;
 }
 
 #topbutton {
   position: fixed;
   z-index: -1;
   cursor: pointer;
-  bottom: 5%;
-  left: 3%;
+  bottom: 4.6%;
+  right: 0.25%;
   height: 2.5vw;
 }
 
@@ -133,22 +133,22 @@ section img {
   left: 4%;
   top: 15%;
   max-width: 50%;
-  border: 10px solid powderblue;
+  border: 3px solid #29465B;
   padding: 1%;
-  color: #30656d;
-  background-color: #61BECE;
+  color: #29465B;
+  background-color: #5692CF;
 }
 
 .txt {
-  background: linear-gradient(#217079, #0EBDD8);
+  background: linear-gradient(#17517F, #0E7FD8);
   padding: 30px;
   width: 100%;
   height: 100%;
 }
 
 #txtheader {
-  background-color: #70C8D1;
-  color: #2E4053;
+  background-color: #5692CF;
+  color: #29465B;
   padding: 1em 2em 1em 2em;
   border-radius: 50% 50% / 15% 40%;
   text-align: center;
@@ -164,8 +164,8 @@ section img {
 }
 
 .paraheader {
-  background-color: #70C8D1;
-  color: #3D6167;
+  background-color: #5692CF;
+  color: #29465B;
   padding: 0.5em;
   border-radius: 50% 50% / 15% 40%;
   text-align: center;
@@ -189,7 +189,7 @@ section img {
 
 /* unvisited link */
 .paralinks:link {
-  color: #36A171;
+  color: #00BFFF;
 }
 
 /* visited link */
@@ -199,7 +199,7 @@ section img {
 
 /* mouse over link */
 .paralinks:hover {
-  color: #267B7B;
+  color: #5CB3FF;
 }
 
 /* selected link */
@@ -208,8 +208,8 @@ section img {
 }
 
 .paratext {
-  background-color: #1C2833;
-  color: #5B8890;
+  background-color: #2D5B8A;
+  color: #85ADCB;
   padding: 2em 3em 0.5em 3em;
   border-radius: 20% 20% 20% 20%;
   text-align: center;
@@ -223,9 +223,9 @@ section img {
   height: 25vh;
   left: 77%;
   z-index: 5;
-  border: 5px solid #FFF;
+  border: 3px solid #2D5B8A;
   border-radius: 12% 7% 10% 7%;
-  background-color: #1C2833;
+  background-color: #;
 }
 
 .prjimg:hover {
@@ -351,9 +351,9 @@ section img {
   top: 20%;
   left: 65%;
   max-width: 50%;
-  background-color: #1C2833;
-  color: white;
-  border: 6px solid #FFF;
+  background-color: #5692CF;
+  color: #29465B;
+  border: 3px solid #29465B;
   border-radius: 7% 5% 7% 5%;
   position: absolute;
   z-index: 3;
@@ -388,16 +388,16 @@ section img {
 }
 
 .btn {
-  background-color: #1C2833;
-  color: white;
+  background-color: #29465B;
+  color: #74abe4;
   cursor: pointer;
   font-size: 0.9em;
   z-index: 3;
-  border: 3px solid white;
+  border: 3px solid #29465B;
 }
 
 .btn:hover {
-  background-color: #70C8D1;
+  background-color: #5CB3FF;
 }
 
 @keyframes flaglight-colors {
