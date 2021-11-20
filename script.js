@@ -13,7 +13,6 @@ var navspy = document.getElementById('navbarscroll-spy');
 var spinframe = document.getElementById('contactinfobox');
 
 var navfirstscroll = true;
-var onetimespin = true;
 
 window.addEventListener('load', setEdge);
 window.addEventListener('resize', setEdge);
@@ -35,10 +34,8 @@ window.addEventListener('scroll', function() {
   //--epoch represents the ratio between all of scrollY and overflow
   mario.style.setProperty('--epoch', ratio);
 
-  if (ratio > 0.8 && onetimespin) {
+  if (ratio > 0.8)
     spinframe.style.animationName = 'spin';
-    onetimespin = false;
-  }
 
   if (navfirstscroll) { //click navbar to collapse on first scroll
     bsCollapse.toggle();
