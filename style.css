@@ -189,12 +189,12 @@ section img {
 
 /* unvisited link */
 .paralinks:link {
-  color: #00BFFF;
+  color: #3D6167;
 }
 
 /* visited link */
 .paralinks:visited {
-  color: #3D6167;
+  color: #00BFFF;
 }
 
 /* mouse over link */
