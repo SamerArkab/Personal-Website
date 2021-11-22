@@ -99,3 +99,11 @@ questionm.addEventListener('mouseover', function() {
 questionm.addEventListener('mouseleave', function() {
   questionm.src = 'images/questionm.png';
 });
+
+topbtn.addEventListener('mouseover', function() {
+  topbtn.src = 'images/topbtnhover.png';
+});
+
+topbtn.addEventListener('mouseleave', function() {
+  topbtn.src = 'images/topbtn.png';
+});
