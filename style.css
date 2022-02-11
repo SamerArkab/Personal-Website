@@ -166,7 +166,7 @@ section img {
 .paraheader {
   background-color: #5692CF;
   color: #29465B;
-  padding: 0.5em;
+  padding: 0.3em;
   border-radius: 50% 50% / 15% 40%;
   text-align: center;
   font-weight: bold;
@@ -210,7 +210,7 @@ section img {
 .paratext {
   background-color: #2D5B8A;
   color: #85ADCB;
-  padding: 2em 3em 0.5em 3em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   border-radius: 20% 20% 20% 20%;
   text-align: center;
   font-weight: bold;
@@ -348,7 +348,7 @@ section img {
 #contactinfobox {
   padding: 0.5% 1% 0.5% 1%;
   top: 20%;
-  left: 65%;
+  left: 60%;
   max-width: 50%;
   background-color: #5692CF;
   color: #29465B;
