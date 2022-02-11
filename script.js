@@ -4,12 +4,12 @@ var bsCollapse = new bootstrap.Collapse(menuToggle);
 var scrollSpy = new bootstrap.ScrollSpy(document.body, { //call the scrollspy
   target: '#navbarscroll-spy'
 });
+var navspy = document.getElementById('navbarscroll-spy');
 
-var mario = document.getElementById('mario'),
-  room, overflow;
+var mario = document.getElementById('mario');
+var room, overflow;
 var flaglight = document.getElementById('flaglight');
 var topbtn = document.getElementById('topbutton');
-var navspy = document.getElementById('navbarscroll-spy');
 var spinframe = document.getElementById('contactinfobox');
 
 var navfirstscroll = true;
@@ -25,8 +25,12 @@ function setEdge() {
   mario.style.setProperty('--maximum', room - mario.height + 'px');
 }
 
-topbtn.addEventListener('click', function() {
-  document.documentElement.scrollTop = 0;
+window.addEventListener('load', (event) => {
+  navfirstscroll = true;
+
+  ratio = (window.pageYOffset || window.scrollY) / overflow;
+  if (ratio > 0.1) //200 px
+    topbtn.style.display = 'block';
 });
 
 window.addEventListener('scroll', function() {
@@ -42,7 +46,7 @@ window.addEventListener('scroll', function() {
     navfirstscroll = false;
   }
 
-  if (document.documentElement.scrollTop > 200) //200 px
+  if (ratio > 0.1)
     topbtn.style.display = 'block';
   else {
     topbtn.style.display = 'none';
@@ -63,7 +67,7 @@ window.addEventListener('scroll', function() {
   (document.documentElement.scrollHeight - document.documentElement.clientHeight)
   is more compatible with other browsers than scrollMaxY which is compatible only with FF
   */
-  if ((document.documentElement.scrollHeight - document.documentElement.scrollTop) == document.documentElement.clientHeight) {
+  if (ratio >= 0.97) {
     flaglight.style.visibility = 'visible';
     mario.src = 'images/mariowin.png';
   } else {
@@ -84,6 +88,10 @@ for (var i = 0; i < links.length; i++) {
     this.classList.add('active'); //add active class to the clicked element
   });
 }
+
+topbtn.addEventListener('click', function() {
+  document.documentElement.scrollTop = 0;
+});
 
 var questionm = document.getElementById('questionm');
 

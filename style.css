@@ -224,8 +224,7 @@ section img {
   left: 77%;
   z-index: 5;
   border: 3px solid #2D5B8A;
-  border-radius: 12% 7% 10% 7%;
-  background-color: #;
+  background-color: #2D5B8A;
 }
 
 .prjimg:hover {
@@ -277,30 +276,30 @@ section img {
   }
 
   25% {
-    width: 30vw;
-    height: 35vh;
-    left: 67%;
+    width: 25vw;
+    height: 30vh;
+    left: 73%;
     z-index: 6;
   }
 
   50% {
-    width: 40vw;
-    height: 45vh;
-    left: 57%;
+    width: 30vw;
+    height: 35vh;
+    left: 68%;
     z-index: 6;
   }
 
   75% {
-    width: 50vw;
-    height: 55vh;
-    left: 47%;
+    width: 35vw;
+    height: 40vh;
+    left: 63%;
     z-index: 6;
   }
 
   100% {
-    width: 60vw;
-    height: 65vh;
-    left: 37%;
+    width: 40vw;
+    height: 45vh;
+    left: 58%;
     z-index: 6;
   }
 }
@@ -312,30 +311,30 @@ section img {
   }
 
   25% {
-    width: 30vw;
-    height: 35vh;
-    left: 67%;
+    width: 25vw;
+    height: 30vh;
+    left: 73%;
     z-index: 6;
   }
 
   50% {
-    width: 40vw;
-    height: 45vh;
-    left: 57%;
+    width: 30vw;
+    height: 35vh;
+    left: 68%;
     z-index: 6;
   }
 
   75% {
-    width: 50vw;
-    height: 55vh;
-    left: 47%;
+    width: 35vw;
+    height: 40vh;
+    left: 63%;
     z-index: 6;
   }
 
   100% {
-    width: 60vw;
-    height: 65vh;
-    left: 37%;
+    width: 40vw;
+    height: 45vh;
+    left: 58%;
     z-index: 6;
   }
 }
