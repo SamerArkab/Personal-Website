@@ -348,13 +348,13 @@ section img {
 #contactinfobox {
   padding: 0.5% 1% 0.5% 1%;
   top: 20%;
-  left: 65%;
-  max-width: 15%;
+  right: 20%;
+  max-width: 30%;
   background-color: #5692CF;
   color: #29465B;
   border: 3px solid #29465B;
   border-radius: 7% 5% 7% 5%;
-  position: relative;
+  position: absolute;
   z-index: 3;
   animation-duration: 1s;
   animation-timing-function: ease-in;
