@@ -111,9 +111,9 @@ header ul li a:hover, .active {
   position: fixed;
   z-index: -1;
   cursor: pointer;
-  bottom: 4.6%;
-  right: 0.25%;
-  height: 2.5vw;
+  bottom: 1.25%;
+  right: 0.5%;
+  width: 1.2vw;
 }
 
 section {

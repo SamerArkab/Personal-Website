@@ -29,7 +29,7 @@ window.addEventListener('load', (event) => {
   navfirstscroll = true;
 
   ratio = (window.pageYOffset || window.scrollY) / overflow;
-  if (ratio > 0.1) //200 px
+  if (ratio > 0.1)
     topbtn.style.display = 'block';
 });
 
@@ -67,7 +67,7 @@ window.addEventListener('scroll', function() {
   (document.documentElement.scrollHeight - document.documentElement.clientHeight)
   is more compatible with other browsers than scrollMaxY which is compatible only with FF
   */
-  if (ratio >= 0.97) {
+  if (ratio >= 0.985) {
     flaglight.style.visibility = 'visible';
     mario.src = 'images/mariowin.png';
   } else {
