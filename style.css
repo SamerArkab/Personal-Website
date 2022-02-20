@@ -81,6 +81,19 @@
   left: 66%;
   border-radius: 3%;
   transform: rotate(10deg);
+  position: relative;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall_effect {
+  from {
+    top: var(--hor_pos + '%');
+  }
+
+  to {
+    top: 35.5%;
+  }
 }
 
 header nav {

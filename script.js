@@ -7,12 +7,14 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, { //call the scrollspy
 var navspy = document.getElementById('navbarscroll-spy');
 
 var mario = document.getElementById('mario');
+var spinmush = document.getElementById('mushroomball');
 var room, overflow;
 var flaglight = document.getElementById('flaglight');
 var topbtn = document.getElementById('topbutton');
 var spinframe = document.getElementById('contactinfobox');
 
 var navfirstscroll = true;
+var firstQMclick = true;
 
 window.addEventListener('load', setEdge);
 window.addEventListener('resize', setEdge);
@@ -27,6 +29,7 @@ function setEdge() {
 
 window.addEventListener('load', (event) => {
   navfirstscroll = true;
+  firstQMclick = true;
 
   ratio = (window.pageYOffset || window.scrollY) / overflow;
   if (ratio > 0.1)
@@ -94,11 +97,41 @@ topbtn.addEventListener('click', function() {
 });
 
 var questionm = document.getElementById('questionm');
-
+var rotdegree = 10;
+var vertpos = 66; //between 64% and 74%
+var vertleft = true; //start by moving to the left side
+var horpos = 35.5;
+spinmush.style.setProperty('--hor_pos', horpos);
 questionm.addEventListener('click', function() {
   var newtemp = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
   newtemp.play();
+  rotdegree += 30;
+  rotdegree = rotdegree % 360;
+  spinmush.style.transform = 'rotate(' + rotdegree + 'deg)';
+  if (vertleft) {
+    vertpos -= 2;
+    spinmush.style.left = vertpos + '%';
+    if (vertpos <= 64)
+      vertleft = false;
+  } else if (!(vertleft)) {
+    vertpos += 2;
+    spinmush.style.left = vertpos + '%';
+    if (vertpos >= 74)
+      vertleft = true;
+  }
+  horpos -= 1;
+  if (horpos <= 10)
+    horpos = 10;
+  spinmush.style.top = horpos + '%';
+  if (firstQMclick) {
+    spinmush.style.animationName = 'fall_effect';
+    firstQMclick = false;
+  }
 });
+
+function getProperty() {
+  return window.getComputedStyle(spinmush).getPropertyValue('--hor_pos');
+}
 
 questionm.addEventListener('mouseover', function() {
   questionm.src = 'images/questionm-hover.png';
