@@ -82,7 +82,7 @@
   border-radius: 3%;
   transform: rotate(10deg);
   position: relative;
-  animation-duration: 40s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 

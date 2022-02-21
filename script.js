@@ -103,6 +103,10 @@ var vertleft = true; //start by moving to the left side
 var horpos = 35.5;
 spinmush.style.setProperty('--hor_pos', horpos);
 questionm.addEventListener('click', function() {
+  if (firstQMclick) {
+    spinmush.style.animationName = 'fall_effect';
+    firstQMclick = false;
+  }
   var newtemp = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
   newtemp.play();
   rotdegree += 30;
@@ -123,10 +127,7 @@ questionm.addEventListener('click', function() {
   if (horpos <= 10)
     horpos = 10;
   spinmush.style.top = horpos + '%';
-  if (firstQMclick) {
-    spinmush.style.animationName = 'fall_effect';
-    firstQMclick = false;
-  }
+
 });
 
 function getProperty() {
