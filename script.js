@@ -14,7 +14,7 @@ var topbtn = document.getElementById('topbutton');
 var spinframe = document.getElementById('contactinfobox');
 
 var navfirstscroll = true;
-var firstQMclick = true;
+var qMclick = false;
 
 window.addEventListener('load', setEdge);
 window.addEventListener('resize', setEdge);
@@ -29,7 +29,7 @@ function setEdge() {
 
 window.addEventListener('load', (event) => {
   navfirstscroll = true;
-  firstQMclick = true;
+  qMclick = false;
 
   ratio = (window.pageYOffset || window.scrollY) / overflow;
   if (ratio > 0.1)
@@ -82,7 +82,6 @@ window.addEventListener('scroll', function() {
 });
 
 var links = document.querySelectorAll('.nav-link'); //return list of said element
-
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() { //add event listener to each nav-link element
     bsCollapse.toggle(); //collapse the navbar after click
@@ -96,43 +95,48 @@ topbtn.addEventListener('click', function() {
   document.documentElement.scrollTop = 0;
 });
 
+var goingUp = true;
 var questionm = document.getElementById('questionm');
 var rotdegree = 10;
-var vertpos = 66; //between 64% and 74%
-var vertleft = true; //start by moving to the left side
-var horpos = 35.5;
-spinmush.style.setProperty('--hor_pos', horpos);
+var horpos = 66; //between 64% and 74%
+var horleft = true; //start by moving to the left side
+var vertpos = 35.5;
+spinmush.style.setProperty('--vert_pos', vertpos);
 questionm.addEventListener('click', function() {
-  if (firstQMclick) {
-    spinmush.style.animationName = 'fall_effect';
-    firstQMclick = false;
-  }
-  var newtemp = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
-  newtemp.play();
+  /* CLICK EVENT */
+  qMclick = true;
+  //spinmush.style.animationPlayState = 'paused';
+  spinmush.style.animationName = null;
+
+  var soundClickQM = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
+  soundClickQM.volume = 0.1;
+  soundClickQM.play();
+
   rotdegree += 30;
   rotdegree = rotdegree % 360;
   spinmush.style.transform = 'rotate(' + rotdegree + 'deg)';
-  if (vertleft) {
-    vertpos -= 2;
-    spinmush.style.left = vertpos + '%';
-    if (vertpos <= 64)
-      vertleft = false;
-  } else if (!(vertleft)) {
-    vertpos += 2;
-    spinmush.style.left = vertpos + '%';
-    if (vertpos >= 74)
-      vertleft = true;
+
+  if (horleft) {
+    horpos -= 2;
+    spinmush.style.left = horpos + '%';
+    if (horpos <= 64)
+      horleft = false;
+  } else {
+    horpos += 2;
+    spinmush.style.left = horpos + '%';
+    if (horpos >= 74)
+      horleft = true;
   }
-  horpos -= 1;
-  if (horpos <= 10)
-    horpos = 10;
-  spinmush.style.top = horpos + '%';
 
+  if (vertpos <= 10)
+    vertpos = 10;
+  else {
+    //vertpos = window.getComputedStyle(spinmush).getPropertyValue('--vert_pos');
+    vertpos -= 3;
+  }
+  spinmush.style.setProperty('--vert_pos', vertpos);
+  spinmush.style.top = vertpos + '%';
 });
-
-function getProperty() {
-  return window.getComputedStyle(spinmush).getPropertyValue('--hor_pos');
-}
 
 questionm.addEventListener('mouseover', function() {
   questionm.src = 'images/questionm-hover.png';
@@ -140,6 +144,10 @@ questionm.addEventListener('mouseover', function() {
 
 questionm.addEventListener('mouseleave', function() {
   questionm.src = 'images/questionm.png';
+  if (qMclick) {
+    spinmush.style.animationName = 'fall_effect';
+    qMclick = false;
+  }
 });
 
 topbtn.addEventListener('mouseover', function() {

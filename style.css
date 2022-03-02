@@ -71,6 +71,9 @@
   height: 9vh;
   top: 49.7%;
   left: 71.1%;
+  animation-name: flaglight-colors;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 #mushroomball {
@@ -82,13 +85,14 @@
   border-radius: 3%;
   transform: rotate(10deg);
   position: relative;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fall_effect {
   from {
-    top: var(--hor_pos + '%');
+    top: var(--vert_pos + '%');
   }
 
   to {
