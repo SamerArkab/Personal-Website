@@ -134,7 +134,7 @@ questionm.addEventListener('click', function() {
     //vertpos = window.getComputedStyle(spinmush).getPropertyValue('--vert_pos');
     vertpos -= 3;
   }
-  spinmush.style.setProperty('--vert_pos', vertpos);
+  //spinmush.style.setProperty('--vert_pos', vertpos);
   spinmush.style.top = vertpos + '%';
 });
 

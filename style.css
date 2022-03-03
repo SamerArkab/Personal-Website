@@ -246,7 +246,7 @@ section img {
 
 .prjimg:hover {
   animation-name: hover-bigger-image;
-  animation-duration: 0.25s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -287,33 +287,12 @@ section img {
 }
 
 @keyframes hover-bigger-image {
-  0% {
+  from {
     width: 20vw;
     height: 25vh;
   }
 
-  25% {
-    width: 25vw;
-    height: 30vh;
-    left: 71.9%;
-    z-index: 6;
-  }
-
-  50% {
-    width: 30vw;
-    height: 35vh;
-    left: 66.9%;
-    z-index: 6;
-  }
-
-  75% {
-    width: 35vw;
-    height: 40vh;
-    left: 61.9%;
-    z-index: 6;
-  }
-
-  100% {
+  to {
     width: 40vw;
     height: 45vh;
     left: 56.9%;
@@ -322,33 +301,12 @@ section img {
 }
 
 @-webkit-keyframes hover-bigger-image {
-  0% {
+  from {
     width: 20vw;
     height: 25vh;
   }
 
-  25% {
-    width: 25vw;
-    height: 30vh;
-    left: 73%;
-    z-index: 6;
-  }
-
-  50% {
-    width: 30vw;
-    height: 35vh;
-    left: 68%;
-    z-index: 6;
-  }
-
-  75% {
-    width: 35vw;
-    height: 40vh;
-    left: 63%;
-    z-index: 6;
-  }
-
-  100% {
+  to {
     width: 40vw;
     height: 45vh;
     left: 58%;
