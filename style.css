@@ -1,438 +1,429 @@
 * {
-  scroll-behavior: smooth;
-  /*scrolling navigation*/
+    scroll-behavior: smooth;
+    /*scrolling navigation*/
 }
 
 #openbg {
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
 }
 
 #mario {
-  height: 10vh;
-  width: 3.5vw;
-  left: 39.8%;
-  top: -5%;
-  z-index: 3;
-  position: fixed;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-play-state: paused;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: move;
-  /*negative delay starts the animation immediatly as if that amount has already gone by,
+    height: 10vh;
+    width: 3.5vw;
+    left: 39.8%;
+    top: -5%;
+    z-index: 3;
+    position: fixed;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: move;
+    /*negative delay starts the animation immediatly as if that amount has already gone by,
     so start the animation at a state further into the animation cycle. */
-  animation-delay: calc(var(--epoch) * -1s);
+    animation-delay: calc(var(--epoch) * -1s);
 }
 
 @-webkit-keyframes move {
-
-  /*for chrome support */
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(var(--maximum));
-  }
+    /*for chrome support */
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(var(--maximum));
+    }
 }
 
 @keyframes move {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(var(--maximum));
-  }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(var(--maximum));
+    }
 }
 
 #pipe {
-  width: 4.5vw;
-  height: 11vh;
-  left: 39.28%;
-  top: 81.5%;
-  z-index: 5;
+    width: 4.5vw;
+    height: 11vh;
+    left: 39.28%;
+    top: 81.5%;
+    z-index: 5;
 }
 
 #brick {
-  z-index: 5;
-  top: 92.5%;
-  left: 39.7%;
-  width: 4.35vw;
-  height: 7.46vh;
+    z-index: 5;
+    top: 92.5%;
+    left: 39.7%;
+    width: 4.35vw;
+    height: 7.46vh;
 }
 
 #questionm {
-  z-index: 2;
-  width: 4.73vw;
-  height: 9vh;
-  top: 49.7%;
-  left: 71.1%;
-  animation-name: flaglight-colors;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+    z-index: 2;
+    width: 4.73vw;
+    height: 9vh;
+    top: 49.7%;
+    left: 71.1%;
+    animation-name: flaglight-colors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 #mushroomball {
-  z-index: 2;
-  width: 10vw;
-  height: 14.8vh;
-  top: 35.5%;
-  left: 66%;
-  border-radius: 3%;
-  transform: rotate(10deg);
-  position: relative;
-  animation-duration: 7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+    z-index: 2;
+    width: 10vw;
+    height: 14.8vh;
+    top: 35.5%;
+    left: 66%;
+    border-radius: 3%;
+    transform: rotate(10deg);
+    position: relative;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fall_effect {
-  from {
-    top: var(--vert_pos + '%');
-  }
-
-  to {
-    top: 35.5%;
-  }
+    from {
+        top: var(--vert_pos + '%');
+    }
+    to {
+        top: 35.5%;
+    }
 }
 
 header nav {
-  background-color: #E3F2FD;
-  padding-left: 30px;
-  opacity: 0.9;
+    background-color: #E3F2FD;
+    padding-left: 30px;
+    opacity: 0.9;
 }
 
 header ul li {
-  margin-right: 15px;
-  margin-left: 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  display: flex;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
 }
 
 header ul li a {
-  padding: 7px 15px;
-  border-radius: 8px;
-  font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-header ul li a:hover, .active {
-  background: #85ADCB;
+header ul li a:hover,
+.active {
+    background: #85ADCB;
 }
 
 #topbutton {
-  position: fixed;
-  z-index: -1;
-  cursor: pointer;
-  bottom: 1.25%;
-  right: 0.7%;
-  width: 1.8%;
+    position: fixed;
+    z-index: -1;
+    cursor: pointer;
+    bottom: 1.25%;
+    right: 0.7%;
+    width: 1.8%;
 }
 
 section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 section img {
-  position: absolute;
+    position: absolute;
 }
 
 #about {
-  z-index: 5;
-  opacity: 0.85;
-  position: absolute;
-  left: 4%;
-  top: 15%;
-  max-width: 50%;
-  border: 3px solid #29465B;
-  padding: 1%;
-  color: #29465B;
-  background-color: #5692CF;
+    z-index: 5;
+    opacity: 0.85;
+    position: absolute;
+    left: 4%;
+    top: 15%;
+    max-width: 50%;
+    border: 3px solid #29465B;
+    padding: 1%;
+    color: #29465B;
+    background-color: #5692CF;
 }
 
 .txt {
-  background: linear-gradient(#17517F, #0E7FD8);
-  padding: 30px;
-  width: 100%;
-  height: 100%;
+    background: linear-gradient(#17517F, #0E7FD8);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 #txtheader {
-  background-color: #5692CF;
-  color: #29465B;
-  padding: 1em 2em 1em 2em;
-  border-radius: 50% 50% / 15% 40%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.5em;
-  z-index: 5;
+    background-color: #5692CF;
+    color: #29465B;
+    padding: 1em 2em 1em 2em;
+    border-radius: 50% 50% / 15% 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    z-index: 5;
 }
 
 .stretch {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .paraheader {
-  background-color: #5692CF;
-  color: #29465B;
-  padding: 0.3em;
-  border-radius: 50% 50% / 15% 40%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-  width: 75%;
+    background-color: #5692CF;
+    color: #29465B;
+    padding: 0.3em;
+    border-radius: 50% 50% / 15% 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    width: 75%;
 }
 
 #zindexprojects {
-  z-index: 4;
+    z-index: 4;
 }
 
 .alignli {
-  text-align: justify;
-  margin: 0 auto;
+    text-align: justify;
+    margin: 0 auto;
 }
 
 .paralinks {
-  text-decoration: underline overline dotted;
+    text-decoration: underline overline dotted;
 }
+
 
 /* unvisited link */
+
 .paralinks:link {
-  color: #3D6167;
+    color: #3D6167;
 }
+
 
 /* visited link */
+
 .paralinks:visited {
-  color: #00BFFF;
+    color: #00BFFF;
 }
+
 
 /* mouse over link */
+
 .paralinks:hover {
-  color: #5CB3FF;
+    color: #5CB3FF;
 }
 
+
 /* selected link */
+
 .paralinks:active {
-  color: #1DB8B8;
+    color: #1DB8B8;
 }
 
 .paratext {
-  background-color: #2D5B8A;
-  color: #85ADCB;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  border-radius: 15% 5% 15% 5%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1em;
-  width: 75%;
+    background-color: #2D5B8A;
+    color: #85ADCB;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 15% 5% 15% 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    width: 75%;
 }
 
 .prjimg {
-  width: 20vw;
-  height: 25vh;
-  left: 77%;
-  z-index: 5;
-  border: 3px solid #2D5B8A;
-  background-color: #2D5B8A;
+    width: 20vw;
+    height: 25vh;
+    left: 77%;
+    z-index: 5;
+    border: 3px solid #2D5B8A;
+    background-color: #2D5B8A;
 }
 
 .prjimg:hover {
-  animation-name: hover-bigger-image;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+    animation-name: hover-bigger-image;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #CEMS1 {
-  top: 10%;
+    top: 10%;
 }
 
 #CEMS2 {
-  top: 20%;
+    top: 20%;
 }
 
 #CEMS3 {
-  top: 30%;
+    top: 30%;
 }
 
 #CEMS4 {
-  top: 40%;
+    top: 40%;
 }
 
 #CNN1 {
-  top: 50%;
+    top: 50%;
 }
 
 #MS1 {
-  top: 60%;
+    top: 60%;
 }
 
 #MS2 {
-  top: 70%;
+    top: 70%;
 }
 
 #HM1 {
-  top: 80%;
+    top: 80%;
 }
 
 #HM2 {
-  top: 90%;
+    top: 90%;
 }
 
 @keyframes hover-bigger-image {
-  from {
-    width: 20vw;
-    height: 25vh;
-  }
-
-  to {
-    width: 40vw;
-    height: 45vh;
-    left: 56.9%;
-    z-index: 6;
-  }
+    from {
+        width: 20vw;
+        height: 25vh;
+    }
+    to {
+        width: 40vw;
+        height: 45vh;
+        left: 56.9%;
+        z-index: 6;
+    }
 }
 
 @-webkit-keyframes hover-bigger-image {
-  from {
-    width: 20vw;
-    height: 25vh;
-  }
-
-  to {
-    width: 40vw;
-    height: 45vh;
-    left: 58%;
-    z-index: 6;
-  }
+    from {
+        width: 20vw;
+        height: 25vh;
+    }
+    to {
+        width: 40vw;
+        height: 45vh;
+        left: 58%;
+        z-index: 6;
+    }
 }
 
 #closebg {
-  z-index: 1;
-  height: 100vh;
-  width: 100%;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
 }
 
 #contactinfobox {
-  padding: 0.5% 1% 0.5% 1%;
-  top: 20%;
-  right: 15%;
-  max-width: 40%;
-  background-color: #5692CF;
-  color: #29465B;
-  border: 3px solid #29465B;
-  border-radius: 7% 5% 7% 5%;
-  position: absolute;
-  z-index: 3;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+    padding: 0.5% 1% 0.5% 1%;
+    top: 20%;
+    right: 15%;
+    max-width: 40%;
+    background-color: #5692CF;
+    color: #29465B;
+    border: 3px solid #29465B;
+    border-radius: 7% 5% 7% 5%;
+    position: absolute;
+    z-index: 3;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 @keyframes spin {
-  from {
-    transform: scale(.1, .1) rotate(0deg);
-  }
-
-  to {
-    transform: scale(1, 1) rotate(355deg);
-  }
+    from {
+        transform: scale(.1, .1) rotate(0deg);
+    }
+    to {
+        transform: scale(1, 1) rotate(355deg);
+    }
 }
 
 @-webkit-keyframes spin {
-  from {
-    transform: scale(.1, .1) rotate(0deg);
-  }
-
-  to {
-    transform: scale(1, 1) rotate(355deg);
-  }
+    from {
+        transform: scale(.1, .1) rotate(0deg);
+    }
+    to {
+        transform: scale(1, 1) rotate(355deg);
+    }
 }
 
 .contactinfo p {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .btn {
-  background-color: #29465B;
-  color: #74abe4;
-  cursor: pointer;
-  font-size: 0.9em;
-  z-index: 3;
-  border: 3px solid #29465B;
+    background-color: #29465B;
+    color: #74abe4;
+    cursor: pointer;
+    font-size: 0.9em;
+    z-index: 3;
+    border: 3px solid #29465B;
 }
 
 .btn:hover {
-  background-color: #5CB3FF;
+    background-color: #5CB3FF;
 }
 
 @keyframes flaglight-colors {
-  0% {
-    background-color: #943126;
-  }
-
-  20% {
-    background-color: #1A5276;
-  }
-
-  40% {
-    background-color: #117864;
-  }
-
-  60% {
-    background-color: #21618C;
-  }
-
-  80% {
-    background-color: #1A5276;
-  }
-
-  100% {
-    background-color: #943126;
-  }
+    0% {
+        background-color: #943126;
+    }
+    20% {
+        background-color: #1A5276;
+    }
+    40% {
+        background-color: #117864;
+    }
+    60% {
+        background-color: #21618C;
+    }
+    80% {
+        background-color: #1A5276;
+    }
+    100% {
+        background-color: #943126;
+    }
 }
 
 @-webkit-keyframes flaglight-colors {
-  0% {
-    background-color: #943126;
-  }
-
-  20% {
-    background-color: #1A5276;
-  }
-
-  40% {
-    background-color: #117864;
-  }
-
-  60% {
-    background-color: #21618C;
-  }
-
-  80% {
-    background-color: #1A5276;
-  }
-
-  100% {
-    background-color: #943126;
-  }
+    0% {
+        background-color: #943126;
+    }
+    20% {
+        background-color: #1A5276;
+    }
+    40% {
+        background-color: #117864;
+    }
+    60% {
+        background-color: #21618C;
+    }
+    80% {
+        background-color: #1A5276;
+    }
+    100% {
+        background-color: #943126;
+    }
 }
 
 #flaglight {
-  z-index: 2;
-  height: 3vh;
-  width: 1.5vw;
-  top: 19.5%;
-  left: 16.55%;
-  animation-name: flaglight-colors;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+    z-index: 2;
+    height: 3vh;
+    width: 1.5vw;
+    top: 19.5%;
+    left: 16.55%;
+    animation-name: flaglight-colors;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
