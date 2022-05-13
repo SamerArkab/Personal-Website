@@ -5,6 +5,6 @@ When I started working on this website, the first thing which caught my attentio
 Thus, I started learning more and more in a very fun process and got familiar with:
 - The use of BootStrap 5.
 - Parallax scrolling.
-- Dove deeper in understand css animations.
+- Dove deeper in understanding CSS animations.
 - Different uses for event listeners.
 - And much more!
