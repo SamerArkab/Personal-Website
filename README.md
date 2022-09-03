@@ -9,3 +9,5 @@ Thus, I started learning more and more in a very fun process and got familiar wi
 - Dove deeper in understanding CSS animations.
 - Different uses for event listeners.
 - And much more!
+
+** Need to revamp README
