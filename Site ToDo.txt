@@ -1,0 +1,13 @@
+1- last changes:
+	fix images, organize layout better, improve padding-bottom...
+
+1.5- more (but minor) changes:
+	write an introduction
+	add LOTS of information about projects + new images + include new projects
+
+2- finally:
+	change scroll to top button with a better looking icon
+	add disclaimer at the bottom
+	go over everything again (design & code)
+	add site's domain to resume and update the cv file
+	add updated cv to site's folder
