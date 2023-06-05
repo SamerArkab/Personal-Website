@@ -1,5 +1,5 @@
 # Samer Arkab Portfolio Website
-[GitHub Pages link](https://samerarkab.github.io/Portfolio/)
+[GitHub Pages link](https://samerarkab.github.io/Portfolio/) (Not all images are displayed on GitHub Pages, and the same issue occurs with sound when the question mark is pressed)
 <br><br>
 
 This portfolio website is a personal project developed to showcase my work and skills as a Software Engineer. The website is built with HTML, CSS, and JavaScript. It uses Bootstrap for responsive design and visual components.
