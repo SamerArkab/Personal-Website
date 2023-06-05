@@ -9,220 +9,290 @@
     <!--download button icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/icon.png" type="image/icon type">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header>
-        <nav id="navbarscroll-spy" class="navbar fixed-top navbar-expand-sm navbar-light">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <nav id="navbarscroll-spy" class="navbar fixed-top navbar-expand-sm navbar-light padding-nav">
+            <button class="navbar-toggler nav-toggler-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#introduction">Introduction</a>
+                        <a class="nav-link active" href="#introduction">&nbsp;&nbsp;Introduction&nbsp;&nbsp;</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">&nbsp;&nbsp;Projects&nbsp;&nbsp;</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactinfo">Contact Information</a>
+                        <a class="nav-link" href="#contactinfo">&nbsp;&nbsp;Contact Information&nbsp;&nbsp;</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <img src="images/topbtn.png" id="topbutton" class="img-fluid rounded-circle pos-abs" alt="top btn">
     </header>
     <main>
-        <img src="images/topbtn.png" id="topbutton" class="" alt="">
-
         <section id="introduction">
-            <img src="images/openingbgNoPipe.png" id="openbg" class="img-fluid" alt="">
-            <img src="images/pipe.png" id="pipe" class="img-fluid" alt="">
-            <img src="images/mario.png" id="mario" class="img-fluid" alt="">
-            <img src="images/brick.png" id="brick" class="img-fluid" alt="">
-            <img src="images/mushroom.png" id="mushroomball" class="img-fluid" alt="">
-            <img src="images/questionm.png" id="questionm" class="img-fluid" alt="">
+            <img src="images/openingbgNoPipe.png" id="openbg" class="img-fluid pos-abs" alt="opening bg">
+            <img src="images/pipe.png" id="pipe" class="img-fluid pos-abs" alt="pipe">
+            <img src="images/mario.png" id="mario" class="img-fluid pos-abs" alt="mario">
+            <img src="images/brick.png" id="brick" class="img-fluid pos-abs" alt="brick">
+            <img src="images/mushroom.png" id="mushroomball" class="img-fluid pos-abs" alt="mushroom">
+            <img src="images/questionm.png" id="questionm" class="img-fluid pos-abs" alt="question mark">
 
             <audio id="audio" src="click_sound_effect.MP3"></audio>
 
-            <div id="about">
-                <h2><b><i>Hi, I'm Samer!</i></b></h2>
-                <hr />
-                <ul class="list-group">
-                    <li style="color: #5692CF; font-size: 1.3em; background-color: #1C2833;" class="list-group-item border-0">
-                        <b>BSc Software Engineering student</b>
-                    </li>
-                    <li style="color: #5692CF; font-size: 1.0em; background-color: #1C2833;" class="list-group-item border-0">
-                        xxxxx xxxxxxxx
-                        <br />xxxxx xxxxxxxx
-                        <br />xxxxx xxxxxxxx
-                        <br />xxxxx xxxxxxxx
-                        <br />xxxxx xxxxxxxx
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="txt" id="projects">
-            <img src="images/CEMS1.png" id="CEMS1" class="img-fluid prjimg" alt="">
-            <img src="images/CEMS2.png" id="CEMS2" class="img-fluid prjimg" alt="">
-            <img src="images/CEMS3.png" id="CEMS3" class="img-fluid prjimg" alt="">
-            <img src="images/CEMS4.png" id="CEMS4" class="img-fluid prjimg" alt="">
-            <img src="images/CNN1.png" id="CNN1" class="img-fluid prjimg" alt="">
-            <img src="images/MS1.png" id="MS1" class="img-fluid prjimg" alt="">
-            <img src="images/MS2.png" id="MS2" class="img-fluid prjimg" alt="">
-            <img src="images/HM1.png" id="HM1" class="img-fluid prjimg" alt="">
-            <img src="images/HM2.png" id="HM2" class="img-fluid prjimg" alt="">
-
             <div class="container-fluid">
-                <br /><br />
-                <div class="row">
-                    <h1 id="txtheader" class="stretch">
-                        <span>P</span>
-                        <span>R</span>
-                        <span>O</span>
-                        <span>J</span>
-                        <span>E</span>
-                        <span>C</span>
-                        <span>T</span>
-                        <span>S</span>
-                    </h1>
-                    <br /><br />
-                </div>
-                <div class="row">
-                    <div id="zindexprojects" class="col-sm">
-                        <p>
-                            <h3 class="paraheader">CEMS System (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/CEMS-Client-Server">GitHub</a>)</h3>
-                            <br />
-                            <div class="paratext">
-                                <p>
-                                    CEMS is a project which my group and I worked on through the semester. The system has many unique features, depending on the logged in user type -<br /> Students can perform "online" exams, which are done using the
-                                    system (including a timer, lock exam option, give extra time with certain criteria, etc.), "offline" exams which require the student to download them, view grades and more.
-                                    <br />Teachers can create new questions and exams, edit existing questions and exams, approve or change grade of students exams, etc.
-                                    <br />Principal can view statistics from the system's DB, whether it is for a specific course or teacher, approve extra time for exam, etc.
-                                    <ul class="alignli">
-                                        I got a better understanding of many related material during this project, among them:
-                                        <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams, Sequence Diagrams and Activity Diagrams.</li>
-                                        <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
-                                        <li>Multithreading - used for functions related to timer.</li>
-                                        <li>Client\Server (TCP\IP)</li>
-                                        <li>Proper code documentation</li>
-                                        <li>Unit testing</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </p>
+                <div id="about" class="row">
+                    <div class="col-md-12">
+                        <h3><b>Hi! My name is Samer Arkab</b></h3>
+                        <hr>
+                        <ul class="list-group">
+                            <li class="list-group-item introLImain">
+                                I am a B.Sc. Software Engineer with a passion for constantly learning and growing. I
+                                thrive on new challenges and chances to apply my skills and learn from others in the
+                                industry. I believe in using my skills and expertise to make a positive impact and
+                                contribute to meaningful causes. When I'm not coding, you can find me indulging in a
+                                good book, exploring the outdoors, or enjoying quality time with friends and family.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <br /><br />
-                <div class="row">
-                    <div id="zindexprojects" class="col-sm">
-                        <p>
-                            <h3 class="paraheader">Detect Face Emotions Using CNN (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/Detect-Face-Emotions-Using-CNN">GitHub</a>)</h3>
-                            <br />
-                            <div class="paratext">
-                                <p>
-                                    Machine Learning project - worked in a group of 3 members during the semester.
-                                    <ul class="alignli">
-                                        Among the subjects I got a better understanding of while working on this project are:
-                                        <li>Training datasets.</li>
-                                        <li>The need for adjusting the dataset and how to do it, also about the layers used.</li>
-                                        <li>The Convolutional \ MaxPooling layers and how the data of the image is compiled in the finish process to form the output.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <br /><br />
-                <div class="row">
-                    <div id="zindexprojects" class="col-sm">
-                        <p>
-                            <h3 class="paraheader">Learning Web Development (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/Learning-Web-Development">GitHub</a>) & First Website (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/Resume-Website">GitHub</a>)</h3>
-                            <br />
-                            <div class="paratext">
-                                <p>
-                                    HTML * CSS * JavaScript
-                                    <br /><br /> Learning from colors to shadows, animations, and more.<br /> Getting familiar with page format, links, iforms, tables, variables, elements, etc.<br /> When I started working on this website, the first thing
-                                    which caught my attention was that the document elements didn't automatically fit on different resolutions.<br /> Thus, I started learning more and more in a very fun process and some of the thing I got familiar with
-                                    are:
-                                    <br />
-                                    <ul class="alignli">
-                                        <li>The use of BootStrap 5.</li>
-                                        <li>Parallax scrolling.</li>
-                                        <li>Dove deeper in understand css animations.</li>
-                                        <li>Different uses for event listeners.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <br /><br />
-                <div class="row">
-                    <div id="zindexprojects" class="col-sm">
-                        <p>
-                            <h3 class="paraheader">MineSweeper - BoomBeach (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/MineSweeper-BoomBeach">GitHub</a>)</h3>
-                            <br />
-                            <div class="paratext">
-                                <p>
-                                    Fun project for self improvement - trying new things using Java and getting more familiar with the use of SceneBuilder \ JavaFX.
-                                </p>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <br /><br />
-                <div class="row">
-                    <div id="zindexprojects" class="col-sm">
-                        <p>
-                            <h3 class="paraheader">HangMan (<a class="paralinks" target="_blank" href="https://github.com/SamerArkab/HangMan">GitHub</a>)</h3>
-                            <br />
-                            <div class="paratext">
-                                <p>
-                                    HangMan Game - Guess The Word<br /> Always loved this game and for that reason I decided to get more familiar with the fundamentals of Python (Tkinter-GUI) by writing it as my first experience with the language.
-                                </p>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <br /><br />
             </div>
         </section>
-
+        <section id="projects">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h1 id="txtheader" class="stretch">
+                            <span>P</span>
+                            <span>R</span>
+                            <span>O</span>
+                            <span>J</span>
+                            <span>E</span>
+                            <span>C</span>
+                            <span>T</span>
+                            <span>S</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h3 class="paraheader">CEMS System (<a class="paralinks" target="_blank"
+                                href="https://github.com/SamerArkab/CEMS-Client-Server">GitHub</a>)</h3>
+                        <div class="paratext">
+                            <p>
+                                CEMS is a project which my group and I worked on through the semester using SCRUM
+                                methodology. The system has many unique features, depending on the logged in user type
+                                -<br>
+                                Students can perform "online" exams, which are done using the system (including a timer,
+                                lock exam option, give extra time with certain criteria, etc.), "offline" exams which
+                                require the student to download them, view grades and more.<br>
+                                Teachers can create new questions and exams, edit existing questions and exams, approve
+                                or change grade of students exams, etc.<br>
+                                Principal can view statistics from the system's DB, whether it is for a specific course
+                                or teacher, approve extra time for exam, etc.<br>
+                            <ul class="alignli">
+                                I got a better understanding of many related material during this project, among them:
+                                <li>Creating UML diagrams using Visual Paradigm - Use-Case Diagrams, Class Diagrams,
+                                    Sequence Diagrams and Activity Diagrams.</li>
+                                <li>Implementing DB to the system (written in Java using Eclipse IDE) using MySQL.</li>
+                                <li>Multithreading - used for functions related to timer.</li>
+                                <li>Client\Server (TCP\IP).</li>
+                                <li>Proper code documentation.</li>
+                                <li>Unit testing.</li>
+                                <li>Working with a team on a project from planning the product to the release part.</li>
+                                <li>Phases of SCRUM methodology.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-3 text-center">
+                        <img src="images/CEMS1.png" class="img-fluid prjimg" alt="CEMS1">
+                    </div>
+                    <div id="zindexprojects" class="col-md-3 text-center">
+                        <img src="images/CEMS2.png" class="img-fluid prjimg" alt="CEMS2">
+                    </div>
+                    <div id="zindexprojects" class="col-md-3 text-center">
+                        <img src="images/CEMS3.png" class="img-fluid prjimg" alt="CEMS3">
+                    </div>
+                    <div id="zindexprojects" class="col-md-3 text-center">
+                        <img src="images/CEMS4.png" class="img-fluid prjimg" alt="CEMS4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h3 class="paraheader">PS Prices Worldwide (<a class="paralinks" target="_blank"
+                                href="https://github.com/SamerArkab/PSPricesWorldwide">GitHub</a>)</h3>
+                        <div class="paratext">
+                            <p>
+                                Find the cheapest price in any country for your desired PlayStation game in the simplest
+                                and most efficient possible way using information retrieval techniques. <br>
+                                This program will iterate through the PlayStation store website of 10 different
+                                countries, search for the user's desire game, retrieve the game's price, details and
+                                poster image.<br>
+                            <ul class="alignli">
+                                During this project I got a better understand of:
+                                <li>REST APIs.</li>
+                                <li>Use of FLASK.</li>
+                                <li>Understanding of the concepts of information retrieval.</li>
+                                <li>Use of Pandas package.</li>
+                                <li>Improved my Python skills.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12 text-center">
+                        <img src="images/IR1.png" class="img-fluid prjimg" alt="IR1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h3 class="paraheader">Track Expenses (Android) (<a class="paralinks" target="_blank"
+                                href="https://github.com/SamerArkab/Android_TrackExpenses">GitHub</a>)</h3>
+                        <div class="paratext">
+                            <p>
+                                TrackExpenses is an Android application which allows the user to add, edit, or delete
+                                any of the expenses that are displayed using a RecyclerView (expenses are saved in the
+                                internal storage of the device as a .txt file).<br>
+                                The project contains a main activity which serves as a fragment container, and two
+                                fragments - one for displaying the expenses and another for adding or editing
+                                expenses.<br>
+                                In addition, the project is built using MVVM architecture for separating the view and
+                                the logic (the adapter acts as the Model, the fragment for displaying the recyclerview
+                                is the View, and the View-Model holds the live data).<br>
+                                The menu contains the following functionalities:<br>
+                            <ul class="alignli">
+                                <li>Add a new expense.</li>
+                                <li>Sum of current displayed expenses button.</li>
+                                <li>Filter expenses by date. The user has the ability to choose the year, year-month, or
+                                    leave both fields empty to display all expenses ever added.</li>
+                                <li>Sort expenses by name, date, or amount. The chosen sorting method is saved using
+                                    SharedPreferences to allow the expenses to be displayed by that order upon the next
+                                    launch of the app.</li>
+                            </ul>
+                            <br>
+                            A broadcast receiver is used when launching the app, which broadcasts the current month and
+                            year, thus, displaying the relevant expenses. Lastly, a foreground service is used, which
+                            uses another broadcast receiver that sends a daily notifiction to the user at 8 PM as a
+                            reminder to enter their daily expenses.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12 text-center">
+                        <video class="prjvideo" controls>
+                            <source src="images/TrackExpenses.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h3 class="paraheader">MineSweeper - BoomBeach (<a class="paralinks" target="_blank"
+                                href="https://github.com/SamerArkab/MineSweeper-BoomBeach">GitHub</a>)</h3>
+                        <div class="paratext">
+                            <p>
+                                Fun project for self improvement - trying new things using Java and getting more
+                                familiar with the use of SceneBuilder \ JavaFX.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-6 text-center">
+                        <img src="images/MS1.png" class="img-fluid prjimg" alt="MS1">
+                    </div>
+                    <div id="zindexprojects" class="col-md-6 text-center">
+                        <img src="images/MS2.png" class="img-fluid prjimg" alt="MS2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-12">
+                        <h3 class="paraheader">HangMan (<a class="paralinks" target="_blank"
+                                href="https://github.com/SamerArkab/HangMan">GitHub</a>)</h3>
+                        <div class="paratext">
+                            <p>
+                                HangMan Game - Guess The Word<br /> Always loved this game and for that reason I decided
+                                to get more familiar with the fundamentals of Python (Tkinter-GUI) by writing it as my
+                                first experience with the language.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="zindexprojects" class="col-md-6 text-center">
+                        <img src="images/HM1.png" class="img-fluid prjimg" alt="HM1">
+                    </div>
+                    <div id="zindexprojects" class="col-md-6 text-center">
+                        <img src="images/HM2.png" class="img-fluid prjimg" alt="HM2">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contactinfo">
-            <img src="images/closingbg.png" id="closebg" class="img-fluid" alt="">
-            <img src="images/flaglight.png" id="flaglight" class="img-fluid" alt="">
+            <img src="images/closingbg.png" id="closebg" class="img-fluid pos-abs" alt="closing bg">
+            <img src="images/flaglight.png" id="flaglight" class="img-fluid pos-abs" alt="flag light">
 
-            <div id="contactinfobox">
-                <p style="text-align: center; font-weight: bold; font-size: 1.5em;">Contact Information</p>
-                <!--&nbsp; == space -->
-                <p>
-                    <button class="btn" type="button" onclick="window.location.href='SamerArkabCV.pdf'"><i
-              class="fa fa-download"></i>&nbsp;&nbsp;Download CV</button><br /><br />
-                    <button class="btn" type="button" onclick="window.location.href='mailto:SamrR93@gmail.com'"><i
-              class="fa fa-envelope"></i>&nbsp;&nbsp;Email Me</button><br /><br />
-                    <button class="btn" type="button" onclick="window.open('https://www.linkedin.com/in/samer-arkab-1293b918a/')"><i
-              class="fa fa-linkedin"></i>&nbsp;&nbsp;LinkedIn Profile</button><br /><br />
-                    <button class="btn" type="button" onclick="window.open('https://github.com/SamerArkab')"><i
-              class="fa fa-github"></i>&nbsp;&nbsp;GitHub Profile</button>
-                </p>
+            <div id="contactinfobox" class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="contactInfoStyle">Contact Information</p>
+                        <!--&nbsp; == space -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn" type="button" onclick="window.location.href='SamerArkabCV.pdf'"><i
+                                class="fa fa-download"></i>&nbsp;&nbsp;Download CV</button><br /><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn" type="button" onclick="window.location.href='mailto:SamrR93@gmail.com'"><i
+                                class="fa fa-envelope"></i>&nbsp;&nbsp;Email Me</button><br /><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn" type="button"
+                            onclick="window.open('https://www.linkedin.com/in/samer-arkab-1293b918a/')"><i
+                                class="fa fa-linkedin"></i>&nbsp;&nbsp;LinkedIn Profile</button><br /><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn" type="button" onclick="window.open('https://github.com/SamerArkab')"><i
+                                class="fa fa-github"></i>&nbsp;&nbsp;GitHub Profile</button>
+                    </div>
+                </div>
             </div>
 
-            <!--
+            <!-- CREATED BY...
       <p style="z-index: 3; position: absolute; bottom: 0%; color: white; background-color: black;">Created By Samer Arkab, 2021 All rights reserved.</p>
     -->
-
         </section>
     </main>
-
-    <footer></footer>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </html>

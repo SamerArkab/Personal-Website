@@ -8,16 +8,21 @@ var navspy = document.getElementById('navbarscroll-spy');
 
 var mario = document.getElementById('mario');
 var spinmush = document.getElementById('mushroomball');
-var room, overflow;
 var flaglight = document.getElementById('flaglight');
 var topbtn = document.getElementById('topbutton');
 var spinframe = document.getElementById('contactinfobox');
 
+var room, overflow, ratio;
 var navfirstscroll = true;
 var qMclick = false;
 
-window.addEventListener('load', setEdge);
 window.addEventListener('resize', setEdge);
+window.addEventListener('load', (event) => {
+    setEdge();
+    ratio = (window.pageYOffset || window.scrollY) / overflow;
+    if (ratio < 0.1)
+        topbtn.style.display = 'none';
+});
 
 function setEdge() {
     room = window.innerHeight;
@@ -27,17 +32,8 @@ function setEdge() {
     mario.style.setProperty('--maximum', room - mario.height + 'px');
 }
 
-window.addEventListener('load', (event) => {
-    navfirstscroll = true;
-    qMclick = false;
-
-    ratio = (window.pageYOffset || window.scrollY) / overflow;
-    if (ratio > 0.1)
-        topbtn.style.display = 'block';
-});
-
 window.addEventListener('scroll', function() {
-    var ratio = (window.pageYOffset || window.scrollY) / overflow;
+    ratio = (window.pageYOffset || window.scrollY) / overflow;
     //--epoch represents the ratio between all of scrollY and overflow
     mario.style.setProperty('--epoch', ratio);
 
@@ -53,17 +49,14 @@ window.addEventListener('scroll', function() {
         topbtn.style.display = 'block';
     else {
         topbtn.style.display = 'none';
-        topbtn.style.zIndex = '100';
     }
 
     if (document.documentElement.scrollTop == 0) { // top position - expand navbar
         navspy.classList.remove('navbar-expand-xs');
         navspy.classList.add('navbar-expand-sm');
-        navspy.style.opacity = "0.9";
     } else { // scrolled - collapse navbar
         navspy.classList.remove('navbar-expand-sm');
         navspy.classList.add('navbar-expand-xs');
-        navspy.style.opacity = "0.8";
     }
 
     /*
@@ -81,20 +74,6 @@ window.addEventListener('scroll', function() {
     passive: true //passive scrolling -> scrolling becomes independent from js
 });
 
-var links = document.querySelectorAll('.nav-link'); //return list of said element
-for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function() { //add event listener to each nav-link element
-        bsCollapse.toggle(); //collapse the navbar after click
-        for (var j = 0; j < links.length; j++)
-            links[j].classList.remove('active'); //remove the active
-        this.classList.add('active'); //add active class to the clicked element
-    });
-}
-
-topbtn.addEventListener('click', function() {
-    document.documentElement.scrollTop = 0;
-});
-
 var goingUp = true;
 var questionm = document.getElementById('questionm');
 var rotdegree = 10;
@@ -104,11 +83,12 @@ var vertpos = 35.5;
 spinmush.style.setProperty('--vert_pos', vertpos);
 questionm.addEventListener('click', function() {
     /* CLICK EVENT */
+    clearInterval(intervalId); // stop any running intervals
     qMclick = true;
     //spinmush.style.animationPlayState = 'paused';
     spinmush.style.animationName = null;
 
-    var soundClickQM = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
+    let soundClickQM = document.getElementById('audio').cloneNode(); //over lap when there's a fast clicker
     soundClickQM.volume = 0.1;
     soundClickQM.play();
 
@@ -132,7 +112,7 @@ questionm.addEventListener('click', function() {
         vertpos = 10;
     else {
         //vertpos = window.getComputedStyle(spinmush).getPropertyValue('--vert_pos');
-        vertpos -= 3;
+        vertpos -= 2;
     }
     //spinmush.style.setProperty('--vert_pos', vertpos);
     spinmush.style.top = vertpos + '%';
@@ -142,11 +122,26 @@ questionm.addEventListener('mouseover', function() {
     questionm.src = 'images/questionm-hover.png';
 });
 
+let intervalId;
+
+function increaseVertPos() {
+    clearInterval(intervalId); // stop any running intervals
+    intervalId = setInterval(function() {
+        vertpos += 0.1; // increase vertpos by 0.1 every 10 milliseconds
+        if (vertpos > 35.5) {
+            vertpos = 35.5;
+            clearInterval(intervalId); // stop the interval when vertpos reaches 35.5
+        }
+        spinmush.style.top = vertpos + '%';
+    }, 10);
+}
+
 questionm.addEventListener('mouseleave', function() {
     questionm.src = 'images/questionm.png';
-    if (qMclick) {
+    if (qMclick) { //question mark was clicked
         spinmush.style.animationName = 'fall_effect';
         qMclick = false;
+        increaseVertPos(); // start the interval
     }
 });
 
@@ -156,4 +151,8 @@ topbtn.addEventListener('mouseover', function() {
 
 topbtn.addEventListener('mouseleave', function() {
     topbtn.src = 'images/topbtn.png';
+});
+
+topbtn.addEventListener('click', function() {
+    document.documentElement.scrollTop = 0;
 });
