@@ -45,7 +45,3 @@ The JavaScript code for this website is organized as follows:
 - Clicking on the question mark triggers a rotation animation for a mushroom image and changes its position. Mouseover and mouseleave events on the question mark also trigger different visual effects.
 - A scroll event listener is used to dynamically update the animation properties of the Mario image and other elements based on the scroll position.
 - The website features a 'back-to-top' button that appears when the user scrolls down. Clicking on it brings the user back to the top of the page.
-
-## Support
-
-For any questions or concerns, you can reach me at SamrR93@gmail.com.
