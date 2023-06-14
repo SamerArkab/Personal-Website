@@ -32,7 +32,7 @@ function setEdge() {
     mario.style.setProperty('--maximum', room - mario.height + 'px');
 }
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     ratio = (window.pageYOffset || window.scrollY) / overflow;
     //--epoch represents the ratio between all of scrollY and overflow
     mario.style.setProperty('--epoch', ratio);
@@ -81,7 +81,7 @@ var horpos = 66; //between 64% and 74%
 var horleft = true; //start by moving to the left side
 var vertpos = 35.5;
 spinmush.style.setProperty('--vert_pos', vertpos);
-questionm.addEventListener('click', function() {
+questionm.addEventListener('click', function () {
     /* CLICK EVENT */
     clearInterval(intervalId); // stop any running intervals
     qMclick = true;
@@ -118,7 +118,7 @@ questionm.addEventListener('click', function() {
     spinmush.style.top = vertpos + '%';
 });
 
-questionm.addEventListener('mouseover', function() {
+questionm.addEventListener('mouseover', function () {
     questionm.src = 'images/questionm-hover.png';
 });
 
@@ -126,7 +126,7 @@ let intervalId;
 
 function increaseVertPos() {
     clearInterval(intervalId); // stop any running intervals
-    intervalId = setInterval(function() {
+    intervalId = setInterval(function () {
         vertpos += 0.1; // increase vertpos by 0.1 every 10 milliseconds
         if (vertpos > 35.5) {
             vertpos = 35.5;
@@ -136,7 +136,7 @@ function increaseVertPos() {
     }, 10);
 }
 
-questionm.addEventListener('mouseleave', function() {
+questionm.addEventListener('mouseleave', function () {
     questionm.src = 'images/questionm.png';
     if (qMclick) { //question mark was clicked
         spinmush.style.animationName = 'fall_effect';
@@ -145,14 +145,14 @@ questionm.addEventListener('mouseleave', function() {
     }
 });
 
-topbtn.addEventListener('mouseover', function() {
+topbtn.addEventListener('mouseover', function () {
     topbtn.src = 'images/topbtnhover.png';
 });
 
-topbtn.addEventListener('mouseleave', function() {
+topbtn.addEventListener('mouseleave', function () {
     topbtn.src = 'images/topbtn.png';
 });
 
-topbtn.addEventListener('click', function() {
+topbtn.addEventListener('click', function () {
     document.documentElement.scrollTop = 0;
 });
