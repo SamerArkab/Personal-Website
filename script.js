@@ -1,11 +1,3 @@
-var menuToggle = document.getElementById('navbarSupportedContent');
-var bsCollapse = new bootstrap.Collapse(menuToggle);
-
-var scrollSpy = new bootstrap.ScrollSpy(document.body, { //call the scrollspy
-    target: '#navbarscroll-spy'
-});
-var navspy = document.getElementById('navbarscroll-spy');
-
 var mario = document.getElementById('mario');
 var spinmush = document.getElementById('mushroomball');
 var flaglight = document.getElementById('flaglight');
@@ -40,23 +32,10 @@ window.addEventListener('scroll', function () {
     if (ratio > 0.8)
         spinframe.style.animationName = 'spin';
 
-    if (navfirstscroll) { //click navbar to collapse on first scroll
-        bsCollapse.toggle();
-        navfirstscroll = false;
-    }
-
     if (ratio > 0.1)
         topbtn.style.display = 'block';
     else {
         topbtn.style.display = 'none';
-    }
-
-    if (document.documentElement.scrollTop == 0) { // top position - expand navbar
-        navspy.classList.remove('navbar-expand-xs');
-        navspy.classList.add('navbar-expand-sm');
-    } else { // scrolled - collapse navbar
-        navspy.classList.remove('navbar-expand-sm');
-        navspy.classList.add('navbar-expand-xs');
     }
 
     /*
@@ -70,6 +49,24 @@ window.addEventListener('scroll', function () {
         flaglight.style.visibility = "hidden";
         mario.src = 'images/mario.png';
     }
+
+    let navLinks = document.querySelectorAll('.nav-link');
+    let fromTop = window.scrollY;
+
+    navLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        // Check if the section is currently visible on the screen:
+        // if the top of the section is at or above the current scroll position,
+        // and if the bottom of the section is below the current scroll position
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
 }, {
     passive: true //passive scrolling -> scrolling becomes independent from js
 });
