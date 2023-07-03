@@ -1,8 +1,8 @@
-# Samer Arkab Portfolio Website
-[Visit my portfolio website!](https://samer-arkab.netlify.app/)
+# Samer Arkab Personal Website
+[Visit my personal website!](https://samer-arkab.netlify.app/)
 <br><br>
 
-This portfolio website is a personal project developed to showcase my work and skills as a Software Engineer. The website is built with HTML, CSS, and JavaScript. It uses Bootstrap for responsive design and visual components.
+This website is a personal project developed to showcase my work and skills as a Software Engineer. The website is built with HTML, CSS, and JavaScript. It uses Bootstrap for responsive design and visual components.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -16,11 +16,11 @@ The website doesn't need a specific installation procedure as it's a simple stat
 
 1. Clone the repository:
     ```
-    git clone https://github.com/SamerArkab/portfolio-website.git
+    git clone https://github.com/SamerArkab/personal-website.git
     ```
 2. Navigate to the repository folder:
     ```
-    cd portfolio-website
+    cd personal-website
     ```
 3. Open the `index.html` file in your preferred web browser.
 
